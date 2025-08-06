@@ -1,0 +1,1350 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.digital_dev_hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  padding: 20px;
+  gap: 50px;
+  background: var(--bglinear-gradient);
+}
+
+.digital_dev_hero_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digital_dev_hero_two img {
+  margin-top: 100px;
+  height: 350px;
+  width: auto;
+}
+
+.digital_dev_hero_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  font-family: var(--secondary-font);
+}
+
+.digital_dev_hero_h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 36px;
+  font-weight: 550;
+  margin-bottom: 50px;
+  width: 80%;
+  font-family: var(--primary-font);
+}
+
+.digital_dev_hero_h1 span {
+  margin-left: 50px;
+}
+
+.digital_dev_hero_one p {
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+}
+
+.digital_dev_hero_one button {
+  width: 180px;
+  height: 60px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 25px;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: var(--secondary-font);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.digital_dev_hero_one button:hover {
+  background: linear-gradient(to right, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================================================== */
+.digital_why_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  margin-top: 20px;
+}
+
+.digital_sub-heading,
+.digital_sub-text {
+  display: block;
+  text-align: center;
+}
+
+.digital_sub-heading {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+}
+
+.digital_sub-text {
+  font-size: 35px !important;
+  width: 100% !important;
+  font-family: var(--primary-font);
+}
+
+.sevice {
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+.digital-boxes {
+  display: flex;
+  justify-content: center; /* Center boxes horizontally */
+  align-items: center; /* Center boxes vertically */
+  flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+  gap: 30px; /* Adjusted gap between boxes */
+  position: relative; /* For background images */
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  position:relative;
+}
+.digital-box
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0  50px; /* Center horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.digital-box-1,
+.digital-box-2,
+.digital-box-3,
+.digital-box-4,
+.digital-box-5,
+.digital-box-6 {
+  height: 300px;
+  width: 275px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--secondary-font);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.digital-box-1:hover,
+.digital-box-2:hover,
+.digital-box-3:hover,
+.digital-box-4:hover,
+.digital-box-5:hover,
+.digital-box-6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+.digital-box-content {
+  position: relative;
+  width: 100%;
+}
+
+.digital-box-icon {
+  position: relative;
+}
+
+.digital-icon-code-block {
+  top: 2px;
+  left: 2px;
+  height: 40px;
+  width: 40px;
+  color: white;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+}
+
+.digital-box-text {
+  padding: 0 10px;
+}
+
+.digital-box-1 p,
+.digital-box-2 p,
+.digital-box-3 p,
+.digital-box-4 p,
+.digital-box-5 p,
+.digital-box-6 p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+
+.digital-properties {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+
+
+
+/* Digital Section Container */
+.digital-professional {
+  padding: 40px 20px;
+  margin-top: 100px;
+  background-color: #1f2a44; /* Lighter background color */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated overlay effect */
+.digital-professional::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,36,107,0.5), rgba(127,163,220,0.5));
+  z-index: 0;
+  animation: backgroundPulse 5s infinite alternate;
+}
+
+/* Section Heading */
+.digital-professional h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+  animation: fadeInDown 1.5s ease-out;
+}
+
+/* Digital Boxes Container */
+.digital-professinal-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Digital Boxes */
+.digital-professional-box-one,
+.digital-professional-box-two,
+.digital-professional-box-three {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  padding: 30px 20px 20px 20px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--primary-font);
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.digital-professional-box-one:hover,
+.digital-professional-box-two:hover,
+.digital-professional-box-three:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+/* Icon positioned at top left inside each box */
+.digital-icon-code-block {
+
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  
+}
+
+/* Content within each digital box */
+.digital-professional-content {
+  margin-top: 70px; /* Space below the icon */
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.digital-professional-content h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+}
+
+.digital-professional-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.digital-professional-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: var(--secondary-font);
+}
+
+
+/* Digital Service Contact Container */
+.digital-service-contact {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(123.87deg, rgba(254, 249, 255, 0.7) -37.82%, rgba(170, 194, 232, 0.7) 106.22%);
+  box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0 30px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  font-family: var(--primary-font);
+  position: relative;
+  overflow: hidden;
+  animation: containerFadeIn 1s ease-out;
+}
+
+/* Digital Service Contact Image */
+.digital-service-contact-img {
+
+  min-width: 260px;
+  max-width: 400px;
+}
+
+.digital-service-contact-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.digital-service-contact-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Digital Service Contact Content */
+.digital-service-contact-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: var(--secondary-font);
+  animation: contentSlideIn 1.2s ease-out;
+}
+
+.digital-service-contact-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+  color: #00246b;
+  font-weight: 600;
+}
+
+.digital-service-contact-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  color: #333;
+  font-family: var(--secondary-font);
+}
+
+.digital-service-contact-content button {
+  height: 50px;
+  width: 250px;
+  background: linear-gradient(to left, #003cb4, #00359f);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 450;
+  margin-top: 60px;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.digital-service-contact-content button:hover {
+  background: linear-gradient(to left, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 7px 20px;
+}
+
+
+/* Digital Background Image Styles */
+.digital-webbg-1 {
+  height: 600px;
+  width: 175px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  opacity: 0.7;
+}
+
+.digital-webbg-2 {
+  height: 600px;
+  width: 175px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  opacity: 0.5;
+}
+
+
+
+/* Digital FAQ Container */
+.digital-faq_container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 40px 20px;
+  text-align: center; /* Align text to center */
+}
+
+/* FAQ Heading */
+.digital-faq {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+}
+
+.digital-faq_container h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+}
+
+
+/* =============================================================
+          Responsiveness
+================================================================*/
+@media (min-width:320px) and (max-width:480px) {
+  /* Container */
+  .container {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  /* Hero Section */
+  .digital_dev_hero {
+    grid-template-columns: 1fr; /* Single column layout */
+    text-align: center;
+    height: auto;
+    gap: 20px;
+    padding: 40px 15px;
+  }
+
+  .digital_dev_hero_two img {
+    height: 250px;
+    width: auto;
+  }
+
+  .digital_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    margin-top: -100px;
+  }
+
+  .digital_dev_hero_h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .digital_dev_hero_h1 span {
+    margin-left: 0;
+  }
+
+  .digital_dev_hero_one p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .digital_dev_hero_one button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 16px;
+  }
+
+  /* Why Box */
+  .digital_why_box {
+    padding: 0 15px;
+    text-align: center;
+  }
+
+  .digital_sub-heading {
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 10px 20px;
+  }
+
+  .digital_sub-text {
+    font-size: 15px !important;
+    line-height: 26px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  /* Digital Boxes */
+  .digital-boxes {
+    display: flex;
+    justify-content: center; /* Center boxes horizontally */
+    align-items: center; /* Center boxes vertically */
+    gap: 30px; /* Adjusted gap between boxes */
+    position: relative; /* For background images */
+    max-width: 1200px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+    position:relative;
+  }
+
+  .digital-box {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    height: 300px; /* Adjusted height */
+    width: 275px; /* Adjusted width */
+    background: linear-gradient(135deg, #00246b, #7fa3dc);
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .digital-box-icon,.digital-icon-code-block {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .digital-boxes p {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 22px;
+    text-align: center;
+    color:white;
+    margin-top: 12px;
+  }
+
+  /* Professional Section */
+  .digital-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .digital-professional h1 {
+    font-size: 24px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .digital-service-contact-content {
+    align-items: center;
+    padding: 10px;
+  }
+
+  .digital-service-contact-img img {
+    margin-left: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .digital-service-contact-content h1 {
+    font-size: 26px;
+    line-height: 28px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .digital-service-contact-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .digital-service-contact-content button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  /* FAQ Section */
+  .digital-faq_container {
+    padding: 20px;
+  }
+
+  .digital-faq {
+    font-size: 16px;
+  }
+
+  /* Hide Background Images for Performance */
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Container */
+  .container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  /* Hero Section */
+  .digital_dev_hero {
+    grid-template-columns: 1fr; /* Single-column layout */
+    text-align: center;
+    height: auto;
+    gap: 25px;
+    padding: 50px 20px;
+  }
+
+  .digital_dev_hero_two img {
+    height: 240px;
+    width: 80%;
+  }
+
+  .digital_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    margin-top:-100px;
+  }
+
+  .digital_dev_hero_h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .digital_dev_hero_h1 span {
+    margin-left: 0;
+  }
+
+  .digital_dev_hero_one p {
+    font-size: 18px;
+  }
+
+  .digital_dev_hero_one button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 18px;
+  }
+
+  /* Why Box */
+  .digital_why_box {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  .digital_sub-heading {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .digital_sub-text {
+    font-size: 20px !important;
+    line-height: 36px;
+    margin-top: 5px;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 22px;
+    padding: 12px;
+    margin-top: 25px;
+  }
+
+  /* Digital Boxes */
+  .digital-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .digital-box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    width: 100%;
+    max-width: 270px;
+    height: 248px;
+    padding: 18px;
+  }
+
+  .digital-box-icon .digital-icon-code-block {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    margin-left: 66px;
+  }
+
+  .digital-boxes p {
+    font-size: 14px;
+    padding: 12px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 14px;
+    color:#fff;
+  }
+
+  /* Professional Section */
+  .digital-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .digital-professional h1 {
+    font-size: 26px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px ;
+  }
+
+  .digital-service-contact-content {
+    align-items: center;
+    padding: 12px;
+ 
+  }
+
+  .digital-service-contact-img img {
+    margin-left: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .digital-service-contact-content h2 {
+    font-size: 26px;
+    line-height: 30px;
+    margin: 12px 0;
+    text-align: left;
+  }
+
+  .digital-service-contact-content p {
+    font-size: 18px;
+    margin: 12px 0;
+    text-align: left;
+  }
+
+  .digital-service-contact-content button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  /* FAQ Section */
+  .digital-faq_container {
+    padding: 25px;
+  }
+
+  .digital-faq {
+    font-size: 18px;
+  }
+
+  /* Hide Background Images for Performance */
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Container */
+  .container {
+    max-width: 100%;
+    padding: 0 25px;
+  }
+
+  /* Hero Section */
+  .digital_dev_hero {
+    display: flex;
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .digital_dev_hero_two img {
+    width: 310px;
+    height:325px;
+    margin-top: 20px;
+  }
+
+  .digital_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  margin-top: -25px;
+  }
+
+  .digital_dev_hero_h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    text-align: left;
+    width:100%;
+  }
+
+  .digital_dev_hero_h1 span {
+    margin-left: 0;
+  }
+
+  .digital_dev_hero_one p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    text-align: left;
+    width:100%;
+  }
+
+  .digital_dev_hero_one button {
+    width: 100%;
+    max-width: 240px;
+    font-size: 20px;
+  }
+
+  /* Why Box */
+  .digital_why_box {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    /* padding: 20px; */
+  }
+
+  .digital_sub-heading {
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .digital_sub-text {
+    font-size: 24px !important;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 32px;
+  }
+
+  /* Digital Boxes */
+  .digital-boxes {
+    flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+  }
+
+  .digital-box {
+    display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+    padding: 10px;
+  }
+
+  .digital-box-icon
+  {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .digital-boxes p {
+    color: white;
+    margin-top:20px;
+    line-height:20px;
+    font-size: 15px;
+    /* padding: 15px; */
+    text-align: center;
+  }
+
+  /* Professional Section */
+  .digital-professinal-boxes {
+
+    align-items: center;
+    padding: 25px;
+  }
+
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    height: 540px;
+    width: 300px;
+    padding: 30px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+    color:#fff;
+  }
+
+  .digital-professional h1 {
+    font-size: 28px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .digital-service-contact-content {
+    align-items: center;
+    padding:0;
+  }
+
+  .digital-service-contact-img img {
+    margin-left: 0;
+    width: 240px;
+    height: 280px;
+  }
+
+  .digital-service-contact-content h1 {
+    font-size: 26px;
+    margin: 15px 0;
+    text-align: justify;
+  }
+
+  .digital-service-contact-content p {
+    font-size: 20px;
+    margin: 15px 0;
+    text-align: justify;
+  }
+
+  .digital-service-contact-content button {
+    width: 100%;
+    max-width: 240px;
+    font-size: 22px;
+    margin-top: 40px;
+  }
+
+  /* FAQ Section */
+  .digital-faq_container {
+    padding: 30px;
+  }
+
+  .digital-faq {
+    font-size: 20px;
+  }
+
+  /* Hide Background Images for Performance */
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width:1280px)
+{
+  .digital_dev_hero_two img {
+    height: 300px;
+    margin-bottom: 18px;
+}
+.digital_dev_hero_h1
+{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.digital_dev_hero_one button {
+  width: 129px;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  /* padding: 20px; */
+}
+.digital-properties
+{
+  font-size: 26px;
+  line-height: 18px;
+}
+
+.digital-webbg-1 {
+  height: 600px;
+  width: 175px;
+  position: absolute;
+  top: -11px;
+  left: -6px;
+  opacity: 1;
+}
+.digiytal-webbg-2
+{
+  right: 0px;
+}
+
+
+.digital-box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:30px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-left: 30px;
+}
+.digital-box_txt {
+  font-size: 14px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.digital-box-1, .digital-box-2, .digital-box-3, .digital-box-4, .digital-box-5, .digital-box-6 {
+  height: 240px;
+  width: 220px;
+  background-color: #fff;
+  border-radius: 0px 30px 0px 30px;
+  background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+  padding: 18px;
+  
+}
+.digital-box-icon
+{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.digital-boxes p {
+  color: white;
+  margin-top:10px;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 14px;
+}
+.digital-professional-box-one, .digital-professional-box-two, .digital-professional-box-three {
+  height: 440px;
+  width: 300px;
+  padding: 30px;
+  background: linear-gradient(to left, #00246b, #7fa3dc);
+  border-radius: 0px 30px 0px 30px;
+}
+.digital-professional-content {
+  color: #ffffff;
+  margin-top: 8px;
+}
+.digital-professional h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.digital-service-contact-img img {
+  margin-left: 40px;
+  width: 234px;
+  height: 240px;
+}
+.digital-service-contact-content {
+  padding: 0px;
+}
+.digital-service-contact-content h1 {
+  font-size: 25px;
+
+}
+}
+
+@media (min-width: 1281px) {
+  /* Hero Section */
+  .digital_dev_hero_two img {
+    height: 350px;
+    margin-bottom: 20px;
+  }
+
+  .digital_dev_hero_h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .digital_dev_hero_one button {
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  /* Service Properties */
+  .digital-properties {
+    font-size: 28px;
+    line-height: 22px;
+  }
+
+  /* Background Elements */
+  .digital-webbg-1 {
+    height: 600px;
+    width: 175px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    opacity: 1;
+  }
+
+  .digiytal-webbg-2 {
+    right: 0px;
+  }
+
+  /* Digital Boxes */
+  .digital-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .digital-box_txt {
+    font-size: 16px;
+    margin-top: -15px;
+    text-align: center;
+  }
+
+  .digital-box-1,
+  .digital-box-2,
+  .digital-box-3,
+  .digital-box-4,
+  .digital-box-5,
+  .digital-box-6 {
+    height: 300px;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+    padding: 10px;
+  }
+
+  .digital-box-icon
+{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+  .digital-boxes p {
+    color: white;
+    margin-top: 14px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  /* Professional Section */
+  .digital-professional-box-one,
+  .digital-professional-box-two,
+  .digital-professional-box-three {
+    height: 460px;
+    width: 320px;
+    padding: 35px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+  }
+
+  .digital-professional-content {
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .digital-professional h2 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 22px;
+  }
+
+  /* Service Contact */
+  .digital-service-contact-img img {
+    margin-left: 50px;
+    width: 260px;
+    height: 260px;
+  }
+
+  .digital-service-contact-content {
+    padding: 10px;
+  }
+
+  .digital-service-contact-content h1 {
+    font-size: 28px;
+  }
+
+  .digital-webbg-1,
+  .digital-webbg-2 {
+    display: flex;
+  }
+}

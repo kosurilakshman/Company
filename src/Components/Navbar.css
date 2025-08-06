@@ -1,0 +1,574 @@
+:root {
+    --background-color: #7FA3DC;
+    --bglinear-gradient: linear-gradient(to right, #00246B, #7FA3DC);
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: "Cabin", sans-serif;
+    --footerbg-color: #142F43;
+    --btn-color: linear-gradient(45deg, #0000FF, #1E90FF);
+    --btn-hover-color: #142F43;
+    --primary-text-color: #fff;
+    --secondary-text-color: #f7f7f7;
+    --section-padding: 2.5rem 1.25rem;
+    --section-gap: 2.25rem;
+    --heading-size: 3.5rem;
+    --subheading-size: 1.5rem;
+    --paragraph-size: 1.1rem;
+}
+
+/* ==========================
+      NAVBAR BASE STYLES
+========================== */
+.navbar-container {
+    width: 100%;
+    background-color:#ffff!important;
+    position: fixed; /* Fixed on top */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: var(--primary-font);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    width: 160px;
+    height: auto;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: var(--background-color);
+}
+
+.navbar-menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Mega Menu */
+.navbar-services-menu {
+    position: relative;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 60px;
+    right: -140px;
+    background-color: white;
+    padding: 2rem 4rem;
+    display: flex;
+    gap: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-top: 2px solid var(--background-color);
+}
+
+.mega-menu-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.mega-menu-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--background-color);
+}
+
+.mega-menu a.navbar-link {
+    padding: 0.5rem 0;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.mega-menu a.navbar-link:hover {
+    color: var(--background-color);
+}
+
+/* ==========================
+         HERO SECTION
+========================== */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* Optional if hero content is hidden by navbar:
+       padding-top: 80px; */
+}
+
+/* ==========================
+        RESPONSIVE CSS
+========================== */
+
+/* 380px - 480px */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-logo {
+        width: 120px;
+        margin: 12px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        flex-direction: column;
+        ;
+    }
+
+    .navbar-menu-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10000;
+    
+    }
+
+    .navbar-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+    background-color: transparent;
+    padding-left: 0;
+    margin-left: 0;
+ 
+}
+
+
+    .navbar-links-show {
+        display: flex;
+        width:100%;
+       
+    }
+
+    .mega-menu {
+        flex-direction: column;
+        top: 30px !important;
+        left: -48px !important;
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+    .mega-menu-column {
+        min-width: auto;
+    }
+}
+
+/* 481px - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-logo {
+        width: 140px;
+        margin: 12px;
+    }
+
+    .navbar-menu-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10000;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        
+    }
+
+    .navbar-links-show {
+        display: flex;
+    }
+
+    .mega-menu {
+        flex-direction: column;
+        top: 30px !important;
+        left:-48px !important;
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+    .mega-menu-column {
+        min-width: auto;
+    }
+}
+
+/* 769px - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar-links {
+        gap: 1.5rem;
+    }
+
+    .mega-menu {
+        right: -100px;
+        padding: 2rem 3rem;
+        gap: 2rem;
+    }
+
+    .mega-menu-column {
+        min-width: 180px;
+    }
+}
+
+/* 1025px - 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .navbar {
+        padding: 1rem 2.5rem;
+    }
+
+    .navbar-links {
+        gap: 2rem;
+    }
+
+    .mega-menu {
+        right: -120px;
+        padding: 2rem 3.5rem;
+        gap: 2.5rem;
+    }
+
+    .mega-menu-column {
+        min-width: 200px;
+    }
+}
+:root {
+    --background-color: #7FA3DC;
+    --bglinear-gradient: linear-gradient(to right, #00246B, #7FA3DC);
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: "Cabin", sans-serif;
+    --footerbg-color: #142F43;
+    --btn-color: linear-gradient(45deg, #0000FF, #1E90FF);
+    --btn-hover-color: #142F43;
+    --primary-text-color: #fff;
+    --secondary-text-color: #f7f7f7;
+    --section-padding: 2.5rem 1.25rem;
+    --section-gap: 2.25rem;
+    --heading-size: 3.5rem;
+    --subheading-size: 1.5rem;
+    --paragraph-size: 1.1rem;
+}
+
+/* ==========================
+      NAVBAR BASE STYLES
+========================== */
+.navbar-container {
+    width: 100%;
+    background-color: white;
+    position: fixed; /* Fixed on top */
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    font-family: var(--primary-font);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+    color: var(--background-color);
+}
+
+.navbar-menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Mega Menu */
+.navbar-services-menu {
+    position: relative;
+}
+
+.mega-menu {
+    position: absolute;
+    top: 60px;
+    right: -140px;
+    background-color: white;
+    padding: 2rem 4rem;
+    display: flex;
+    gap: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    border-top: 2px solid var(--background-color);
+}
+
+.mega-menu-column {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+
+.mega-menu-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--background-color);
+}
+
+.mega-menu a.navbar-link {
+    padding: 0.5rem 0;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.mega-menu a.navbar-link:hover {
+    color: var(--background-color);
+}
+
+/* ==========================
+         HERO SECTION
+========================== */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* Optional if hero content is hidden by navbar:
+       padding-top: 80px; */
+}
+
+/* ==========================
+        RESPONSIVE CSS
+========================== */
+
+/* 380px - 480px */
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-logo {
+        width: 120px;
+        margin: 12px;
+    }
+
+    .navbar-right {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-menu-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10000;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar-links-show {
+        display: flex;
+    }
+
+    .mega-menu {
+        flex-direction: column;
+        top: 50px;
+        left: 0;
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+    .mega-menu-column {
+        min-width: auto;
+    }
+}
+
+/* 481px - 768px */
+@media (min-width: 481px) and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-logo {
+        width: 140px;
+        margin: 12px;
+    }
+
+    .navbar-menu-icon {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10000;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+        margin-top: 1rem;
+        padding-left: 1rem;
+    }
+
+    .navbar-links-show {
+        display: flex;
+    }
+
+    .mega-menu {
+        flex-direction: column;
+        top: 50px;
+        left: 0;
+        width: 100vw;
+        padding: 1rem 2rem;
+    }
+
+    .mega-menu-column {
+        min-width: auto;
+    }
+}
+
+/* 769px - 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar-links {
+        gap: 1.5rem;
+    }
+
+    .mega-menu {
+        right: -100px;
+        padding: 2rem 3rem;
+        gap: 2rem;
+    }
+
+    .mega-menu-column {
+        min-width: 180px;
+    }
+}
+
+/* 1025px - 1280px */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .navbar {
+        padding: 1rem 2.5rem;
+    }
+
+    .navbar-links {
+        gap: 2rem;
+    }
+
+    .mega-menu {
+        right: -120px;
+        padding: 2rem 3.5rem;
+        gap: 2.5rem;
+    }
+
+    .mega-menu-column {
+        min-width: 200px;
+    }
+}

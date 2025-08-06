@@ -1,0 +1,235 @@
+ :root {
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+.contactUs-box {
+  width: 90%;
+  background-color: #fff;
+  color: #000;
+  box-shadow: 3px 10px 5px 0px rgb(207, 207, 207);
+  border-radius: 18px;
+  margin: 60px auto;
+  padding: 20px;
+  height: 260px;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+.contactUs-heading {
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: underline;
+  font-family: var(--primary-font);
+  margin-bottom: 20px;
+}
+
+.contactUs-content {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--secondary-font);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.para {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #00246b;
+  font-family: var(--primary-font);
+}
+
+.contactUs-btn {
+  width: 30%;  
+  background-color: #042056;
+  color: #fff;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  letter-spacing: 2.5px;
+  border-radius: 8px;
+  font-family: var(--secondary-font);
+  cursor: pointer;
+  margin-top: 45px;
+      /* Prevent scrollbar */
+  white-space: nowrap;    /* Prevent text wrap */
+  line-height: 1; 
+}
+
+
+/* ===================================================================
+            Responsiveness
+======================================================================*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .contactUs-box {
+      width: 95%; /* Use more width for smaller screens */
+      margin: 40px auto;
+      padding: 15px;
+      height: auto;  /* Adjust height dynamically */
+  }
+
+  .contactUs-heading {
+      font-size: 24px; /* Reduce heading size */
+      margin-bottom: 15px;
+  }
+
+  .contactUs-content {
+      font-size: 16px; /* Reduce text size for better fit */
+      margin-bottom: 15px;
+      line-height: 1.4;
+  }
+
+  .para {
+      font-size: 16px;
+      margin-top: 15px;
+  }
+
+  .contactUs-btn {
+      width: 80%; /* Make button full-width for easy tap */
+      padding: 10px;
+      font-size: 18px;
+      margin-top: 20px;
+      letter-spacing: 1.5px;
+  }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contactUs-box {
+      width: 85%; /* Slightly reduce width for better spacing */
+      margin: 50px auto;
+      padding: 20px;
+      height: auto;  /* Adjust height dynamically */
+  }
+
+  .contactUs-heading {
+      font-size: 24px; /* Slightly larger for better readability */
+      margin-bottom: 18px;
+  }
+
+  .contactUs-content {
+      font-size: 16px; /* Improve readability */
+      margin-bottom: 18px;
+      line-height: 1.5;
+  }
+
+  .para {
+      font-size: 17px;
+      margin-top: 18px;
+  }
+
+  .contactUs-btn {
+      width: 50%; /* Keep button size balanced */
+      padding: 12px;
+      font-size: 18px;
+      margin-top: 22px;
+      letter-spacing: 2px;
+  }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .contactUs-box {
+      width: 95%; /* Reduce width for better layout */
+      margin: 60px auto;
+      padding: 25px;
+      height: 330px;  /* Allow dynamic height */
+  }
+
+  .contactUs-heading {
+      font-size: 26px; /* Maintain readability */
+      margin-bottom: 20px;
+  }
+
+  .contactUs-content {
+      font-size: 18px; /* Slightly larger for better visibility */
+      margin-bottom: 20px;
+      line-height: 1.6;
+  }
+
+  .para {
+      font-size: 18px;
+      margin-top: 20px;
+  }
+
+  .contactUs-btn {
+      width: 40%; /* Maintain balance */
+      padding: 14px;
+      font-size: 20px;
+      margin-top: 25px;
+      letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .contactUs-box {
+      width: 95%; /* Adjust width for a more structured layout */
+      margin: 70px auto;
+      padding: 30px;
+      height: 330px; /* Allow dynamic height */
+  }
+
+  .contactUs-heading {
+      font-size: 28px; /* Slightly larger for emphasis */
+      margin-bottom: 22px;
+  }
+
+  .contactUs-content {
+      font-size: 19px; /* Maintain readability */
+      margin-bottom: 22px;
+      line-height: 1.7;
+  }
+
+  .para {
+      font-size: 19px;
+      margin-top: 22px;
+  }
+
+  .contactUs-btn {
+      width: 35%; /* Adjust button size for proportion */
+      padding: 15px;
+      font-size: 20px;
+      margin-top: 28px;
+      letter-spacing: 2px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .contactUs-box {
+      width: 95%; /* Reduce width for a more compact and professional look */
+      margin: 80px auto;
+      padding: 35px;
+      height: 330px; /* Allow dynamic height */
+  }
+
+  .contactUs-heading {
+      font-size: 30px; /* Enhance readability */
+      margin-bottom: 25px;
+  }
+
+  .contactUs-content {
+      font-size: 20px; /* Slightly larger for better legibility */
+      margin-bottom: 25px;
+      line-height: 1.8;
+  }
+
+  .para {
+      font-size: 20px;
+      margin-top: 25px;
+  }
+
+  .contactUs-btn {
+      width: 30%; /* Keep button well-proportioned */
+      padding: 16px;
+      font-size: 22px;
+      margin-top: 30px;
+      letter-spacing: 2.5px;
+  }
+}

@@ -1,0 +1,1466 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+
+
+.app_dev_hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  padding: 20px;
+  gap: 50px;
+  background: var(--bglinear-gradient);
+}
+
+.app_dev_hero_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app_dev_hero_two img {
+  margin-top: 100px;
+  height: 350px;
+  width: auto;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.app_dev_hero_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  font-family: var(--secondary-font);
+}
+
+.app_dev_hero_h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 36px;
+  font-weight: 550;
+  margin-bottom: 50px;
+  width: 80%;
+  font-family: var(--primary-font);
+}
+
+.app_dev_hero_h1 span {
+  margin-left: 50px;
+}
+
+.app_dev_hero_one p {
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+}
+.app_dev_hero_one button {
+  width: 180px;
+  height: 60px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 25px;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: var(--secondary-font);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.app_dev_hero_one button:hover {
+  background: linear-gradient(to right, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================================================== */
+
+.why_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  margin-top: 20px;
+}
+
+.app-sub-heading,
+.app-sub-text {
+  display: block; /* Ensures full-width behavior */
+  text-align: center; /* Centers text horizontally */
+}
+
+.app-sub-heading {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: var(--secondary-font);
+}
+.app-sub-text {
+  font-size: 35px;
+  font-weight: 600;
+  width: 100%;
+  font-family: var(--primary-font);
+}
+.app-text-highlight {
+  color: #7fa3dc;
+}
+.sevice {
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+/* Existing styles for boxes remain the same */
+
+.appbg-1 {
+  height: 600px;
+  width: 175px;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  opacity: 0.7;
+}
+
+.appbg-2 {
+  height: 600px;
+  width: 175px;
+  position: absolute;
+  top: 0;
+  right: 20px;
+  opacity: 0.5;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 20px;
+}
+.app-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 50px; /* Center horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6 {
+  width: 100%;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--secondary-font);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Changed to flex-start to align text to left */
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.box-1:hover,
+.box-2:hover,
+.box-3:hover,
+.box-4:hover,
+.box-5:hover,
+.box-6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+/* Wrapper for icon and text inside each box */
+.box-content {
+  position: relative;
+  width: 100%;
+  /* Optional: add padding if needed */
+}
+
+/* Icon stays at top left */
+.box-icon {
+  margin-bottom: 20px;
+}
+
+.box-icon .icon-code-block {
+  top: 10px;
+  left: 15px;
+  height: 50px;
+  width: 50px;
+  color: white;
+}
+
+/* Text container for additional padding */
+.box-text {
+  padding: 0 10px; /* horizontal padding for text */
+}
+
+.box-text p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+/* Boxes group containers remain the same */
+.app-box{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.properties {
+  text-align: center;
+  font-size: 30px;
+  /* padding: 10px; */
+  font-weight: 600;
+  font-family: var(--primary-font);
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.app-box-icon {
+  position: relative;
+  /* position: absolute; */
+}
+
+.app-icon-code-block {
+  top: 2px;
+  left: 2px;
+  height: 40px;
+  width: 40px;
+  color: white;
+}
+
+.boxes p {
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  line-height: 1.3;
+  font-family: var(--secondary-font);
+}
+
+/* Professional Section Container */
+.professional_section {
+  padding: 40px 20px;
+  margin-top: 100px;
+  background-color: #1f2a44; /* Lighter background color */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated overlay to add a dynamic effect */
+.professional_section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 36, 107, 0.5),
+    rgba(127, 163, 220, 0.5)
+  );
+  z-index: 0;
+  animation: backgroundPulse 5s infinite alternate;
+}
+@keyframes backgroundPulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+/* Section Heading */
+.professional_section h2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 22px !important;
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+  animation: fadeInDown 1.5s ease-out;
+  line-height: 30px;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Professional Boxes Container */
+.professinal-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Each Professional Box */
+.professional-box-one,
+.professional-box-two,
+.professional-box-three {
+  position: relative;
+  height: 400px;
+  width: 300px;
+  padding: 30px 20px 20px 20px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--primary-font);
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.professional-box-one:hover,
+.professional-box-two:hover,
+.professional-box-three:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+/* Icon positioned at top left inside each box */
+.professional_icon-code-block {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+}
+
+/* Content within each professional box */
+.professional-content {
+  margin-top: 70px; /* Space below the icon */
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.professional-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+}
+
+.professional-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.professional-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: var(--secondary-font);
+}
+
+/* Service Contact Container */
+.service-contact {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(
+    123.87deg,
+    rgba(254, 249, 255, 0.7) -37.82%,
+    rgba(170, 194, 232, 0.7) 106.22%
+  );
+  box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0 30px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  font-family: var(--primary-font);
+  position: relative;
+  overflow: hidden;
+  animation: containerFadeIn 1s ease-out;
+}
+
+@keyframes containerFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Service Contact Image */
+.service-contact-img {
+  flex: 1;
+  min-width: 350px;
+  max-width: 400px;
+}
+
+.service-contact-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.service-contact-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Service Contact Content */
+.service-contact-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: var(--secondary-font);
+  animation: contentSlideIn 1.2s ease-out;
+}
+
+@keyframes contentSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.service-contact-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+  color: #00246b;
+  font-weight: 600;
+  line-height: 30px;
+}
+
+.service-contact-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: var(--secondary-font);
+  color: #333;
+}
+
+.service-contact-content button {
+  height: 50px;
+  width: 250px;
+  background: linear-gradient(to left, #003cb4, #00359f);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 450;
+  margin-top: 60px;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-contact-content button:hover {
+  background: linear-gradient(to left, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 7px 20px;
+}
+
+/* ==========================================================================================================
+                                      Responsiveness
+=============================================================================================================*/
+@media (min-width: 320px) and (max-width: 480px) {
+  :root {
+    --primary-text: 12px;
+    --secondary-text: 20px;
+  }
+
+  .app_dev_hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 20px;
+    padding: 10px;
+    overflow: hidden;
+  }
+
+  .app_dev_hero_two img {
+    margin-top: 100px;
+    height: 250px;
+    overflow: hidden;
+    }
+
+  .app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -170px;
+    overflow: hidden;
+    
+  }
+
+  .app_dev_hero_h1 {
+    margin-top: 150px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .app_dev_hero_h1 span {
+    margin-left: 0;
+    overflow: hidden;
+  }
+
+  .app_dev_hero_one p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+    overflow: hidden;
+  }
+
+  .app_dev_hero_one button {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+
+  .app-sub-heading {
+    font-size: 16px;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 10px 20px;
+  }
+
+  .app-sub-text {
+    font-size: 20px !important;
+    line-height: 26px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+
+
+
+  .properties_section {
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .properties {
+    font-size: 22px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .app-box {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    overflow: hidden;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    height: 300px; /* Adjusted height */
+    width: 275px; /* Adjusted width */
+    background: linear-gradient(135deg, #00246b, #7fa3dc);
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+  }
+
+  .box-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .app-box-icon {
+    font-size: 30px; /* Increase icon size */
+    margin-bottom: 5px;
+    overflow: hidden;
+  }
+
+  .box-text p {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .appbg-1,
+  .appbg-2 {
+    display: none; /* Hide background images on small screens */
+  }
+
+  .professional_section {
+    padding: 20px;
+    margin-top: 50px;
+    overflow: hidden;
+  }
+
+  .professional_section h2 {
+    font-size: 28px;
+    overflow: hidden;
+  }
+
+  .professinal-boxes {
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+  }
+
+  .professional-box-one,
+  .professional-box-two,
+  .professional-box-three {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .professional-content {
+    margin-top: 50px;
+    overflow: hidden;
+  }
+
+  .professional-content h3 {
+    font-size: 20px;
+    overflow: hidden;
+  }
+
+  .professional-content ul li {
+    font-size: 14px;
+    overflow: hidden;
+  }
+
+  .service-contact {
+    flex-direction: column;
+    padding: 20px;
+    overflow: hidden;
+  }
+
+  .service-contact-img {
+    min-width: 80%;
+    max-width: 80%;
+    overflow: hidden;
+  }
+
+  .service-contact-content h1,
+  .service-contact-content h2 {
+    font-size: 25px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .service-contact-content p {
+    font-size: 17px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .service-contact-content button {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 30px;
+    overflow: hidden;
+    
+
+  }
+
+  .icon-code-block {
+    height: 100px;
+    width: 100px;
+    color: black;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  :root {
+    --primary-text: 13px;
+    --secondary-text: 22px;
+  }
+
+  .app_dev_hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .app_dev_hero_two img {
+    margin-top: 150px;
+    height: 300px;
+  }
+
+  .app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    margin-top: -50x;
+  }
+
+  .app_dev_hero_h1 {
+    margin-top: 50px;
+    font-size: 26px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .app_dev_hero_h1 span {
+    margin-left: 0;
+  }
+
+  .app_dev_hero_one p {
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .app_dev_hero_one button {
+    width: 160px;
+    height: 55px;
+    font-size: 18px;
+    margin-top: 22px;
+  }
+
+  .sub-heading {
+    font-size: 23px;
+  }
+
+  .app-sub-text {
+    font-size: 24px;
+    margin-top: 2px;
+  }
+
+
+  .appbg-1,
+  .appbg-2 {
+    display: none;
+  }
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  .app-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    width: 90%;
+    height: 248px;
+    padding: 18px;
+  }
+
+  .app-icon-code-block {
+    margin-top: 0;
+    position: static;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .box-text p {
+    font-size: 15px;
+    line-height: 18px;
+    color:#fff;
+    text-align: center;
+  }
+
+  .properties {
+    font-size: 28px;
+    margin: 0 40px;
+  }
+
+  .professional_section {
+    padding: 30px;
+    margin-top: 70px;
+  }
+
+  .professional_section h2 {
+    font-size: 30px;
+  }
+
+  .professinal-boxes {
+    flex-direction: column; /* Column layout */
+    gap: 15px;
+  }
+
+  .professional-box-one,
+  .professional-box-two,
+  .professional-box-three {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .professional-content {
+    margin-top: 50px;
+  }
+
+  .professional-content h3 {
+    font-size: 21px;
+  }
+
+  .professional-content ul li {
+    font-size: 15px;
+  }
+
+  .service-contact {
+    flex-direction: column;
+    padding: 30px;
+    margin: 30px auto;
+  }
+
+  .service-contact-img {
+    margin-left: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .service-contact-content h1,
+  .service-contact-content h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .service-contact-content p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .service-contact-content button {
+    width: 220px;
+    height: 48px;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 115px;
+  }
+
+  .icon-code-block {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+/* =================== */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .app_dev_hero {
+    display: flex;
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+    gap: 40px;
+   
+  }
+
+  .app_dev_hero_two {
+    order: 1; /* Image below text */
+    margin-top: 80px;
+  }
+
+  .app_dev_hero_two img {
+    height: 300px;
+    margin-top: -26px;
+  }
+
+  .app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    order: 2; /* Text above image */
+    margin-top: 50px;
+  }
+
+  .app_dev_hero_h1 {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
+    line-height: 25px;
+    margin-top: 30px;
+  }
+
+  .app_dev_hero_one p {
+    font-size: 16px;
+    width: 100%;
+    margin-top: -27px;
+    text-align: left;
+  }
+
+  .app_dev_hero_one button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .why_box {
+    padding: 20px;
+  }
+  .app-sub-heading {
+    font-size: 28px;
+    font-weight: 200;
+    font-family: var(--secondary-font);
+}
+.app-sub-text {
+  font-size: 29px;
+  font-weight: 600;
+  width: 100%;
+  font-family: var(--primary-font);
+}
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+  }
+  .app-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    width: 100%;
+    height: 260px;
+    padding: 8px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+   
+  }
+  .boxes p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .professional_section {
+    padding: 30px;
+  }
+  .professional_section h2 {
+    font-size: 27px;
+  }
+  .app-box-icon {
+    text-align: center;
+  }
+
+  .professinal-boxes {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .professional-box-one,
+  .professional-box-two,
+  .professional-box-three {
+    width: 280px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .service-contact {
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+   
+  }
+
+  .service-contact-img img {
+    height: 240px;
+  }
+
+  .service-contact-content {
+    width: 100%;
+  }
+
+  .service-contact-content h2 {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .service-contact-content p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .service-contact-content button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+  }
+  .appbg-1,
+  .appbg-2 {
+    display: none;
+  }
+  .box-icon .icon-code-block {
+    top: 10px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+    color: white;
+  }
+}
+
+/* =================== */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .app_dev_hero {
+    grid-template-columns: 1fr 1fr; /* Two-column layout */
+    text-align: left;
+    height: auto;
+    padding: 50px 40px;
+  }
+
+  .app_dev_hero_two {
+    order: 1; /* Image on the right */
+    margin-top: 100px;
+  }
+
+  .app_dev_hero_two img {
+    height: 350px;
+    margin-top: 0;
+  }
+
+  .app_dev_hero_one {
+    align-items: flex-start;
+    text-align: left;
+    order: 1; /* Text on the left */
+  }
+
+  .app_dev_hero_h1 {
+    font-size: 24px;
+    width: 100%;
+    margin-top: 0;
+    text-align: left;
+    line-height: 30px;
+    margin-top: 30px;
+  }
+
+  .app_dev_hero_one p {
+    font-size: 18px;
+    width: 100%;
+    margin-top: -20px;
+    text-align: left;
+  }
+
+  .app_dev_hero_one button {
+    width: 180px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .why_box {
+    padding: 30px;
+  }
+  .app-sub-heading {
+    font-size: 28px;
+    font-weight: 200;
+    font-family: var(--secondary-font);
+}
+.app-sub-text {
+  font-size: 29px;
+  font-weight: 600;
+  width: 100%;
+  font-family: var(--primary-font);
+}
+  .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto 70px;
+  }
+
+  .app-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    height:260px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+    padding: 8px;
+  }
+  .app-box-icon {
+    text-align: center;
+  }
+
+  .professional_section {
+    padding: 40px;
+  }
+
+  .professinal-boxes {
+    justify-content: center;
+    gap: 20px;
+  }
+  .boxes p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .professional-box-one,
+  .professional-box-two,
+  .professional-box-three {
+    width: 320px;
+    height: auto;
+    padding: 25px;
+  }
+
+  .service-contact {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 40px;
+  }
+
+  .service-contact-img img {
+    height: 280px;
+  }
+
+  .service-contact-content {
+    width: 60%;
+  }
+
+  .service-contact-content h2 {
+    font-size: 28px;
+  }
+
+  .service-contact-content p {
+    font-size: 18px;
+  }
+
+  .service-contact-content button {
+    width: 180px;
+    height: 55px;
+    font-size: 20px;
+  }
+
+  .appbg-1,
+  .appbg-2 {
+    display: flex;
+  }
+  .appbg-1
+{
+  height: 420px;
+  left: -55px;
+  top: 66px;
+}
+.appbg-2
+{
+  height: 470px;
+  right:-47px;
+  top: 59px;
+}
+}
+
+@media screen and (min-width: 1281px) {
+  .app_dev_hero {
+    grid-template-columns: 1fr 1fr; /* Maintains two-column layout */
+    text-align: left;
+    height: auto;
+    padding: 80px 60px;
+    gap: 60px;
+  }
+
+  .app_dev_hero_two img {
+    height: 450px;
+    margin-top: 100px;
+  }
+
+  .app_dev_hero_one {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .app_dev_hero_h1 {
+    font-size: 32px;
+    width: 90%;
+    margin-top: 80px;
+  }
+
+  .app_dev_hero_one p {
+           font-size: 20px;
+        width: 100%;
+        margin-top: -30px
+  }
+
+  .app_dev_hero_one button {
+    width: 200px;
+    height: 65px;
+    font-size: 22px;
+  }
+
+  .why_box {
+    padding: 50px;
+  }
+
+  .sub-heading {
+    font-size: 24px;
+  }
+
+  .sub-text {
+    font-size: 40px !important;
+  }
+  .boxes {
+    margin: 0 120px;
+  }
+
+  .app-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+  }
+
+  .box-1,
+  .box-2,
+  .box-3,
+  .box-4,
+  .box-5,
+  .box-6 {
+    height: 300px;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+    padding: 20px;
+  }
+  .app-box-icon {
+    text-align: center;
+  }
+
+  .boxes p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .professional_section {
+    padding: 10px;
+  }
+
+  .professinal-boxes {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .professional-box-one,
+  .professional-box-two,
+  .professional-box-three {
+    width: 350px;
+    height: auto;
+    padding: 25px;
+  }
+
+  .service-contact {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding: 60px;
+    gap: 50px;
+  }
+
+  .service-contact-img img {
+    height: 350px;
+  }
+
+  .service-contact-content {
+    width: 55%;
+  }
+
+  .service-contact-content h2 {
+    font-size: 36px;
+  }
+
+  .service-contact-content p {
+    font-size: 20px;
+  }
+
+  .service-contact-content button {
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .appbg-1,
+  .appbg-2 {
+    display: flex;
+  }
+  .appbg-1
+{
+  height: 420px;
+  left: -85px;
+  top: 66px;
+}
+.appbg-2
+{
+  height: 470px;
+  right:-20px;
+  top: 59px;
+}
+}

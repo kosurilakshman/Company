@@ -1,0 +1,136 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+/* Software FAQ Container */
+.software-faq-container {
+  max-width: 1100px; /* Matches AI FAQ container width */
+  margin: 20px auto;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+/* Software FAQ Title */
+.software-faq {
+  font-size: 22px;
+  font-weight: 300;
+  color: #222;
+  text-align: center;
+  margin-top: 20px;
+  font-family: var(--secondary-font);
+}
+
+/* Software FAQ Subheading */
+.software-faq-container h2 {
+  font-size: 28px;
+  font-weight: 500;
+  color: #222;
+  text-align: center;
+  margin-top: 10px;
+  font-family: var(--primary-font);
+}
+
+/* Software FAQ Box */
+.software-faq-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #00246b, #5F8BD3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: var(--primary-font);
+}
+
+/* Software FAQ Question */
+.software-faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: var(--secondary-font);
+}
+
+/* Software FAQ Icon */
+.software-faq-icon {
+  font-size: 22px;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* Software FAQ Answer */
+.software-faq-answer {
+  padding: 15px;
+  font-size: 16px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  font-family: var(--primary-font);
+}
+
+
+@media screen and (min-width:320px) and (max-width:480px)
+{
+  .software-faq-container {
+    /* max-width: 100%; */
+    margin: 20px auto;
+    text-align: center;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.software-faq-box
+{
+  width:90%;
+}
+}
+
+
+@media screen and (min-width:481px) and (max-width:768px)
+{
+  .software-faq-container {
+    /* max-width: 100%; */
+    margin: 20px auto;
+    text-align: center;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.software-faq-box
+{
+  width:90%;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+  .software-faq-container {
+    /* max-width: 100%; */
+    margin: 20px auto;
+    text-align: center;
+    font-family: var(--primary-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.software-faq-box
+{
+  width:90%;
+}
+}

@@ -1,0 +1,286 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+/* Container for the AI process slider */
+.ai-container-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 24px;
+  width: 100%;
+}
+
+/* Progress Bar Wrapper */
+.ai-progress-bar-wrapper-slider {
+  width: 80%;
+  height: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Progress Bar */
+.ai-progress-bar-slider {
+  height: 100%;
+  background: linear-gradient(to right, #00246b, #7fa3dc);
+  transition: width 0.3s ease-in-out;
+  border-radius: 10px 0 0 10px;
+}
+
+/* Cards Wrapper */
+.ai-cards-wrapper-slider {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 40vh;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scroll-snap-type: x mandatory;
+}
+
+.ai-cards-wrapper-slider::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
+
+/* Individual Card */
+.ai-card-slider {
+  min-width: 80%;
+  height: 40vh;
+  padding: 24px;
+  background: linear-gradient(to left, #00246b, #7fa3dc);
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  scroll-snap-align: center;
+}
+
+/* Card Heading */
+.ai-card-slider-heading {
+  font-size: 28px;
+  margin: 20px 0;
+  line-height: 22px;
+  font-family: var(--primary-font);
+}
+
+/* Card Paragraph */
+.ai-card-slider-para {
+  font-size: 18px;
+  margin-top: 20px;
+  line-height: 24px;
+  font-family: var(--secondary-font);
+  color:#fff;
+}
+
+
+/* =================================================================================
+                        Responsiveness
+====================================================================================*/
+
+@media screen and (max-width: 480px) {
+  .ai-container-slider {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .ai-progress-bar-wrapper-slider {
+    width: 90%; /* Increased width for better responsiveness */
+    height: 8px; /* Adjusted height for proportion */
+  }
+
+  .ai-cards-wrapper-slider {
+    width: 90%;
+    gap: 12px;
+    padding: 8px;
+  }
+
+  .ai-card-slider {
+    min-width: 90%;
+    height: 35vh; /* Slightly increased for better content fit */
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-card-slider-heading {
+    font-size: 18px; /* Reduced font size */
+    margin: 16px 0;
+    line-height: 26px;
+  }
+
+  .ai-card-slider-para {
+    font-size: 15px;
+    margin-top: 16px;
+    line-height: 22px;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ai-container-slider {
+    gap: 14px;
+    padding: 24px;
+  }
+
+  .ai-progress-bar-wrapper-slider {
+    width: 85%; /* Adjusted width for better fit */
+    height: 9px; /* Slightly increased for better visibility */
+  }
+
+  .ai-cards-wrapper-slider {
+    width: 85%;
+    gap: 14px;
+    padding: 10px;
+  }
+
+  .ai-card-slider {
+    min-width: 90%;
+    height: 35vh; /* Slightly increased for better content fit */
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+  }
+
+  .ai-card-slider-heading {
+    font-size: 22px; /* Slightly larger for better readability */
+    margin: 18px 0;
+    line-height: 22px;
+  }
+
+  .ai-card-slider-para {
+    font-size: 16px;
+    margin-top: 18px;
+    line-height: 24px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .ai-container-slider {
+    gap: 16px;
+    padding: 32px;
+  }
+
+  .ai-progress-bar-wrapper-slider {
+    width: 80%; /* Balanced width for medium screens */
+    height: 10px; /* Slightly increased for better visibility */
+  }
+
+  .ai-cards-wrapper-slider {
+    width: 80%;
+    gap: 16px;
+    padding: 12px;
+  }
+
+  .ai-card-slider {
+    min-width: 90%;
+    height: 35vh; /* Adjusted height for better content fit */
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-card-slider-heading {
+    font-size: 24px; /* Adjusted font size for readability */
+    margin: 20px 0;
+    line-height: 24px;
+  }
+
+  .ai-card-slider-para {
+    font-size: 17px;
+    margin-top: 20px;
+    line-height: 26px;
+  }
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .ai-container-slider {
+    gap: 18px;
+    padding: 40px;
+  }
+
+  .ai-progress-bar-wrapper-slider {
+    width: 75%; /* Slightly reduced width for better alignment */
+    height: 12px; /* Increased for better visibility */
+  }
+
+  .ai-cards-wrapper-slider {
+    width: 75%;
+    gap: 18px;
+    padding: 14px;
+  }
+
+  .ai-card-slider {
+    min-width: 90%;
+    height: 30vh; /* Optimized height for better proportion */
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+  }
+
+  .ai-card-slider-heading {
+    font-size: 26px; /* Slightly larger for better readability */
+    margin: 22px 0;
+    line-height: 26px;
+  }
+
+  .ai-card-slider-para {
+    font-size: 18px;
+    margin-top: 22px;
+    line-height: 28px;
+  }
+}
+
+
+@media screen and (min-width: 1281px) {
+  .ai-container-slider {
+    gap: 20px;
+    padding: 50px;
+  }
+
+  .ai-progress-bar-wrapper-slider {
+    width: 80%; /* Reduced width for better overall alignment */
+    height: 14px; /* Slightly larger for enhanced visibility */
+  }
+
+  .ai-cards-wrapper-slider {
+    width: 80%;
+    gap: 20px;
+    padding: 16px;
+  }
+
+  .ai-card-slider {
+    min-width: 95%;
+    height: 35vh; /* Balanced height for better proportion */
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.3);
+  }
+
+  .ai-card-slider-heading {
+    font-size: 28px; /* Larger font size for better readability */
+    margin: 24px 0;
+    line-height: 30px;
+    font-weight: 550;
+  }
+
+  .ai-card-slider-para {
+    font-size: 20px;
+    margin-top: 24px;
+    line-height: 30px;
+    font-weight: 450;
+  }
+}

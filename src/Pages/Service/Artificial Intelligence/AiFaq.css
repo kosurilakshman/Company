@@ -1,0 +1,65 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+/* AI FAQ Container */
+.ai-faq-container {
+  max-width: 1100px;
+  margin: 20px auto;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+/* AI FAQ Box */
+.ai-faq-box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #00246b, #5F8BD3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  font-family: var(--primary-font);
+}
+
+/* AI FAQ Question */
+.ai-faq-question {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: var(--secondary-font);
+}
+
+/* AI FAQ Icon */
+.ai-faq-icon {
+  font-size: 22px;
+  line-height: 24px;
+  color: #fff;
+}
+
+/* AI FAQ Answer */
+.ai-faq-answer {
+  padding: 15px;
+  font-size: 16px;
+  color: #555;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  font-family: var(--primary-font);
+}
+
+
+/* ===========================================================
+            Resopnsiveness
+==============================================================*/

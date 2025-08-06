@@ -1,0 +1,1281 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.web_app_dev_hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  padding: 20px;
+  gap: 50px;
+  background: var(--bglinear-gradient);
+}
+
+.web_app_dev_hero_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.web_app_dev_hero_two img {
+  margin-top: 100px;
+  height: 350px;
+  width: auto;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.web_app_dev_hero_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  font-family: var(--secondary-font);
+}
+
+.web_app_dev_hero_h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 36px;
+  font-weight: 550;
+  margin-bottom: 50px;
+  width: 80%;
+  font-family: var(--primary-font);
+}
+
+.web_app_dev_hero_h1 span {
+  margin-left: 50px;
+}
+
+.web_app_dev_hero_one p {
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+}
+
+.web_app_dev_hero_one button {
+  width: 180px;
+  height: 60px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 25px;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: var(--secondary-font);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.web_app_dev_hero_one button:hover {
+  background: linear-gradient(to right, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================================================== */
+
+.web_app_why_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+   padding: 20px;
+}
+
+.web_app_sub-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.web_app_sub-text {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+
+.web_app_properties {
+  text-align: center;
+  padding: 40px 20px; /* Increased padding for better spacing */
+  font-family: var(--primary-font);
+  margin-top: -60px;
+}
+
+.web_app_properties h2 {
+  font-size: 32px; /* Increased heading size */
+  font-weight: 600;
+  margin-bottom: 40px; /* Increased margin for spacing */
+  color: #333; /* Darker color for heading */
+}
+
+.web_app_boxes {
+  display: flex;
+  justify-content: center; /* Center boxes horizontally */
+  align-items: center; /* Center boxes vertically */
+  flex-wrap: wrap; /* Allow boxes to wrap on smaller screens */
+  gap: 30px; /* Adjusted gap between boxes */
+  position: relative; /* For background images */
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  position:relative;
+}
+.web_app_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0  50px; /* Center horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+
+.web-box-1,
+.web-box-2,
+.web-box-3,
+.web-box-4,
+.web-box-5,
+.web-box-6 {
+  height: 300px; /* Adjusted height */
+  width: 275px; /* Adjusted width */
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 10px; /* Rounded corners */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.web-box-1:hover,
+.web-box-2:hover,
+.web-box-3:hover,
+.web-box-4:hover,
+.web-box-5:hover,
+.web-box-6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.web_app_box-icon {
+  margin-bottom: 20px;
+}
+
+.web_app_box_txt {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+.web-professional {
+  padding: 40px 20px;
+  margin-top: 100px;
+  background-color: #1f2a44;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.web-professional::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 36, 107, 0.5), rgba(127, 163, 220, 0.5));
+  z-index: 0;
+  animation: backgroundPulse 5s infinite alternate;
+}
+
+@keyframes backgroundPulse {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+.web-professional h2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  animation: fadeInDown 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.web-professinal-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.web-professional-box-one,
+.web-professional-box-two,
+.web-professional-box-three {
+  position: relative;
+  height: 450px;
+  width: 300px;
+  padding: 30px 20px 20px 20px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--primary-font);
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.web-professional-box-one:hover,
+.web-professional-box-two:hover,
+.web-professional-box-three:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+.web-icon-code-block {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+}
+
+.web-professional-content {
+  margin-top: 70px;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.web-professional-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+}
+
+.web-professional-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.web-professional-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: var(--secondary-font);
+}
+
+
+.web_app_service-contact {
+  width: 99%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(123.87deg, rgba(254, 249, 255, 0.7) -37.82%, rgba(170, 194, 232, 0.7) 106.22%);
+  box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 30px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  font-family: var(--primary-font);
+}
+
+.web_app_service-contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.web_app_service-contact-img img {
+  margin-left: 40px;
+  width: 440px;
+  height: 250px;
+}
+
+.web_app_service-contact-content h1 {
+  font-size: 32px;
+  text-align: left;
+  margin-right: 80px;
+  font-family: var(--primary-font);
+}
+
+.web_app_service-contact-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: 200;
+}
+
+.web_app_service-contact-content button {
+  height: 50px;
+  width: 250px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(to left, #003cb4, #00359f);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 750;
+  margin-top: 50px;
+  font-family: var(--primary-font);
+}
+
+.web_app_webbg-1 {
+  height: 520px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  left: -165px ;
+  opacity: 0.7;
+  margin-left: -100px;
+}
+
+.web_app_webbg-2 {
+  height: 520px;
+  width: 150px;
+  position: absolute;
+  top: 0;
+  right:-80px ;
+  opacity: 0.5;
+  margin-right: -100px;
+}
+
+/* ========== FAQ's =============== */
+
+.web_app_faq_container {
+  text-align: center;
+}
+
+.web_app_faq {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.web_app_faq_container h2 {
+  text-decoration: underline;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 10px;
+  font-family: var(--primary-font);
+}
+
+
+
+
+/* ========================================================================
+      Responsiveness max-width of 375px
+==========================================================================*/
+@media screen and (min-width: 320px) and (max-width: 480px)
+
+{
+  .web_app_dev_hero {
+    display: flex;
+    flex-direction: column; /* Stack elements for mobile */
+    height:auto;
+    padding: 40px 15px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .web_app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  .web_app_dev_hero_h1 {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .web_app_dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .web_app_dev_hero_one p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .web_app_dev_hero_two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .web_app_dev_hero_two img {
+    height: 250px;
+    width: 275px;
+  }
+ 
+
+  .web_app_dev_hero_one button {
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+  .web_app_why_box {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .web_app_sub-heading {
+    font-size: 16px;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 10px -4px;
+  }
+
+  .web_app_sub-text {
+    font-size: 18px !important;
+    line-height: 26px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+
+  .web_app_sevice {
+    font-size: 22px;
+  }
+
+  .web_app_boxes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+  }
+  .web_app_box {
+  
+       display: grid;
+      grid-template-columns: repeat(1,1fr);
+      gap:20px;
+      justify-content: center;
+      align-items: center;
+      margin: 0  auto;
+      overflow: hidden;
+       }
+     .web-box-1,
+  .web-box-2,
+  .web-box-3,
+  .web-box-4,
+  .web-box-5,
+  .web-box-6 {
+    height: 265px;
+    width: 250px;
+    background: linear-gradient(135deg, #00246b, #7fa3dc);
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .web_app_properties h2 {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .web_app_box-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .web_app_box_txt {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 22px;
+    color:#fff;
+  }
+
+  /* Web App Professional Boxes */
+  .web-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .web-professional-box-one,
+  .web-professional-box-two,
+  .web-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .web-professional h1 {
+    font-size: 20px;
+  }
+  .web-professional h2
+  {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  /* Service Contact */
+  .web_app_service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width:90%;
+  }
+
+  .web_app_service-contact-content {
+    align-items: center;
+    padding: 10px;
+    
+  }
+
+  .web_app_service-contact-img img {
+    margin-left: 0;
+    width: 200px;
+    height: 200px;
+  }
+
+  .web_app_service-contact-content h1 {
+    font-size: 24px;
+    line-height: 30px;
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .web_app_service-contact-content p {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  .web_app_service-contact-content button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  /* Hide Background Images for Performance */
+  .web_app_webbg-1,
+  .web_app_webbg-2 {
+    display: none;
+  }
+    
+  }
+
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Web App Development Hero Section */
+  .web_app_dev_hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 50px 20px;
+    text-align: center;
+    gap: 35px;
+  }
+
+  .web_app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top:-80px;
+  }
+
+  .web_app_dev_hero_h1 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .web_app_dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .web_app_dev_hero_one p {
+    font-size: 17px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .web_app_dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .web_app_dev_hero_two img {
+    height: 280px;
+    width: auto;
+  }
+
+  .web_app_dev_hero_one button {
+    width: 100%;
+    max-width: 220px;
+    height: 48px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+  }
+
+  /* Web App Why Box */
+  .web_app_why_box {
+    margin: 25px auto;
+    padding: 0 20px;
+  }
+
+  .web_app_sub-heading {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .web_app_sub-text {
+    font-size: 26px;
+    line-height: 28px;
+  }
+
+  .web_app_sevice {
+    font-size: 24px;
+  }
+
+  .web_app_boxes {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+  }
+
+  .web_app_box {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap:20px;
+   justify-content: center;
+   align-items: center;
+   margin: auto;
+   margin-left: 8px;
+  }
+
+  .web-box-1,
+  .web-box-2,
+  .web-box-3,
+  .web-box-4,
+  .web-box-5,
+  .web-box-6 {
+    width: 100%;
+    max-width: 270px;
+    height: 248px;
+    padding: 18px;
+  }
+
+  .web_app_properties {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  .web_app_box-icon {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .web_app_boxes p {
+    font-size: 14px;
+    padding: 12px 0;
+    line-height: 18px;
+    color:#fff;
+  }
+
+  /* Web App Professional Boxes */
+  .web-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .web-professional-box-one,
+  .web-professional-box-two,
+  .web-professional-box-three {
+    width: 92%;
+    height: auto;
+    padding: 22px;
+  }
+
+  .web-professional h1 {
+    font-size: 26px;
+  }
+
+  /* Service Contact */
+  .web_app_service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 0px;
+    width:95%;
+    padding: 30px 16px;
+  }
+
+  .web_app_service-contact-content {
+    align-items: center;
+    padding: 15px;
+    
+  }
+
+  .web_app_service-contact-img img {
+    margin-left: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .web_app_service-contact-content h2 {
+    font-size: 24px;
+    margin: 12px 0;
+    text-align: left;
+  }
+
+  .web_app_service-contact-content p {
+    font-size: 16px;
+    margin: 12px 0;
+    text-align: left;
+  }
+
+  .web_app_service-contact-content button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 19px;
+    margin-top: 35px;
+  }
+
+  /* Hide Background Images for Performance */
+  .web_app_webbg-1,
+  .web_app_webbg-2 {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* Web App Development Hero Section */
+  .web_app_dev_hero {
+    display: flex;
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .web_app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -25px;
+  }
+
+  .web_app_dev_hero_h1 {
+    font-size: 22px;
+    line-height: 32px;
+    margin-bottom: 30px;
+    width:100%;
+    text-align: left;
+  }
+
+  .web_app_dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .web_app_dev_hero_one p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    width:100%;
+    text-align: left;
+  }
+
+  .web_app_dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .web_app_dev_hero_two img {
+    height: 260px;
+    width: auto;
+  }
+
+  .web_app_dev_hero_one button {
+    width: 100%;
+    max-width: 230px;
+    height: 50px;
+    font-size: 1.2rem;
+    border-radius: 12px;
+  }
+
+  /* Web App Why Box */
+  .web_app_why_box {
+    margin: 30px auto;
+    padding: 0 25px;
+  }
+
+  .web_app_sub-heading {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .web_app_sub-text {
+    font-size: 28px;
+    line-height: 30px;
+  }
+
+  .web_app_sevice {
+    font-size: 26px;
+  }
+
+  .web_app_boxes {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .web_app_box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+    
+  }
+
+  .web-box-1,
+  .web-box-2,
+  .web-box-3,
+  .web-box-4,
+  .web-box-5,
+  .web-box-6 {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .web_app_properties {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .web_app_box-icon {
+    height: 40px;
+    width: 40px;
+  }
+
+  .web_app_boxes p {
+    font-size: 14px;
+    padding: 0px;
+    line-height: 23px;
+    color:#fff;
+    margin-top: 20px;
+   
+  }
+
+  /* Web App Professional Boxes */
+  .web-professinal-boxes {
+   
+    align-items: center;
+    padding: 25px;
+  }
+
+  .web-professional-box-one,
+  .web-professional-box-two,
+  .web-professional-box-three {
+    width: 90%;
+    height: 480px;
+    padding: 25px;
+  }
+
+  .web-professional h1 {
+    font-size: 28px;
+  }
+
+  /* Service Contact */
+  .web_app_service-contact {
+ 
+    text-align: center;
+    padding: 30px;
+    width:95%;
+  }
+
+  .web_app_service-contact-content {
+    align-items: center;
+    padding: 20px;
+  }
+
+  .web_app_service-contact-img img {
+    margin-left: 0;
+    width: 240px;
+    height: 240px;
+  }
+
+  .web_app_service-contact-content h2 {
+    font-size: 28px;
+    margin: 15px 0;
+    text-align:left;
+  }
+
+  .web_app_service-contact-content p {
+    font-size: 18px;
+    margin: 15px 0;
+    text-align: left;
+  }
+
+  .web_app_service-contact-content button {
+    width: 100%;
+    max-width: 230px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  /* Hide Background Images for Performance */
+  .web_app_webbg-1,
+  .web_app_webbg-2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width:1025px) and (max-width:1280px)
+{
+  .web_app_dev_hero_two img {
+    height: 300px;
+    margin-bottom: 18px;
+}
+.web_app_dev_hero_h1
+{
+  font-size: 25px;
+  font-weight: 600;
+}
+.web_app_dev_hero_one button {
+  width: 129px;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  /* padding: 20px; */
+}
+.web_app_sub-text
+{
+  font-size: 2.2rem;
+}
+.web_app_properties
+{
+  font-size: 32px;
+}
+.web_app_webbg-1 {
+  height: 484px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  left: -30px;
+  opacity: 1;
+
+}
+.web_app_webbg-2
+{
+  right: -39px;
+}
+.web_app_box{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+  
+}
+.web_app_box_txt {
+  font-size: 14px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.web-box-1, .web-box-2, .web-box-3, .web-box-4, .web-box-5, .web-box-6 {
+
+  width: 200px;
+  height:260px;
+  background-color: #fff;
+  border-radius: 0px 30px 0px 30px;
+  background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+  padding: 8px;
+}
+.web_app_box_txt {
+  margin-top: 14px;
+  font-size: 16px;
+  /* padding: 15px; */
+  text-align: center;
+  color:#fff;
+}
+.web-service-contact-img img {
+  margin-left: 40px;
+  width: 234px;
+  height: 240px;
+}
+.web-service-contact-content h1 {
+  font-size: 25px;
+
+}
+.web_app_webbg-1,.web_app_webbg-2
+{
+  display: flex;
+}
+.web_app_webbg-1
+{
+  height: 470px;
+  left: 120px;
+  top: 66px;
+}
+.web_app_webbg-2
+{
+  height: 470px;
+  right: 81px;
+  top: 59px;
+}
+}
+
+
+
+@media (min-width: 1281px)  {
+  
+  /* Web App Development Hero Section */
+  .web_app_dev_hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 70px 40px;
+    text-align: left;
+  }
+
+  .web_app_dev_hero_one {
+    width: 50%;
+  }
+
+  .web_app_dev_hero_h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .web_app_dev_hero_one p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .web_app_dev_hero_two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .web_app_dev_hero_two img {
+    height: 350px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .web_app_dev_hero_one button {
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  /* Web App Properties */
+  .web_app_properties {
+    font-size: 34px;
+    margin-top: -60px;
+  }
+  .web_app_sub-text
+{
+  font-size: 2.2rem;
+}
+
+  /* Web App Background Elements */
+  .web_app_webbg-1
+{
+  height:540px;
+  top:60px;
+  left:75px;
+}
+.web_app_webbg-2
+{
+  height:540px;
+  top:80px;
+  right: -10px;
+  margin-right: 0;
+}
+
+  /* Web App Boxes */
+  .web_app_box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .web_app_box_txt {
+    font-size: 16px;
+    margin-top: -10px;
+    text-align: center;
+    color: #fff;
+  }
+
+  .web-box-1,
+  .web-box-2,
+  .web-box-3,
+  .web-box-4,
+  .web-box-5,
+  .web-box-6 {
+    height: 300px;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+    padding: 10px;
+  }
+
+  .web-boxes p {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+  }
+
+  /* Service Contact Section */
+  .web-service-contact-img img {
+    width: 100%;
+    height: 260px;
+  }
+
+  .web-service-contact-content h2 {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  /* Hide Background Images for Performance */
+ 
+}

@@ -1,0 +1,1262 @@
+:root {
+  --primary-text: 24px;
+  --secondary-text: 40px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+}
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.ds_dev_hero {
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items: center;
+justify-content: center;
+height: 100vh;
+width: 100%;
+padding: 20px;
+gap: 50px;
+background: var(--bglinear-gradient);
+}
+
+.ds_dev_hero_two {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.ds_dev_hero_two img {
+margin-top: 100px;
+height: 390px;
+width: auto;
+animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+from {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+.ds_dev_hero_one {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+text-align: left;
+font-family: var(--secondary-font);
+}
+
+.ds_dev_hero_h1 {
+margin-top: 100px;
+color: white;
+font-size: 36px;
+font-weight: 550;
+margin-bottom: 50px;
+width: 80%;
+font-family: var(--primary-font);
+}
+
+.ds_dev_hero_h1 span {
+margin-left: 50px;
+}
+
+.ds_dev_hero_one p {
+color: white;
+font-size: 18px;
+width: 80%;
+margin-bottom: 10px;
+font-family: var(--secondary-font);
+}
+
+.ds_dev_hero_one button {
+width: 180px;
+height: 60px;
+padding: 12px 24px;
+font-size: 20px;
+font-weight: 600;
+color: #fff;
+margin-top: 25px;
+background: linear-gradient(to right, #003cb4, #00359f);
+border: none;
+border-radius: 14px;
+cursor: pointer;
+font-family: var(--secondary-font);
+transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ds_dev_hero_one button:hover {
+background: linear-gradient(to right, #0056b3, #0048a3);
+transform: translateY(-3px);
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Why Choose Us Section */
+.ds-why_box {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-family: var(--primary-font);
+margin-top: 20px;
+}
+
+.ds-sub-heading,
+.ds-sub-text {
+display: block;
+text-align: center;
+}
+
+.ds-sub-heading {
+font-size: 20px;
+font-weight: 200;
+font-family: var(--secondary-font);
+}
+
+.ds-sub-text {
+font-size: 35px !important;
+font-weight: 600;
+width: 100% !important;
+font-family: var(--primary-font);
+}
+
+.ds-text-highlight {
+color: #7fa3dc !important;
+}
+
+.ds-properties {
+text-align: center;
+font-size: 30px;
+font-weight: 600;
+font-family: var(--primary-font);
+color: #000000;
+margin-bottom: 20px;
+}
+
+/* Background Images */
+.ds-webbg-1,
+.ds-webbg-2 {
+height: 600px;
+width: 175px;
+position: absolute;
+top: 0;
+opacity: 0.7;
+}
+
+.ds-webbg-1 {
+left: 20px;
+}
+
+.ds-webbg-2 {
+right: 20px;
+opacity: 0.5;
+}
+
+/* Boxes Section */
+.ds-boxes {
+display: flex;
+justify-content: center; /* Center boxes horizontally */
+align-items: center; /* Center boxes vertically */
+gap: 30px; /* Adjusted gap between boxes */
+position: relative; /* For background images */
+max-width: 1200px; /* Maximum width for the container */
+margin: 0 auto; /* Center the container */
+position:relative;
+}
+
+.ds-box {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 30px;
+width: 100%;
+max-width: 1200px;
+margin: 0  auto; /* Center horizontally */
+padding: 20px;
+box-sizing: border-box;
+
+}
+
+.ds-box-1,
+.ds-box-2,
+.ds-box-3,
+.ds-box-4,
+.ds-box-5,
+.ds-box-6 {
+height: 300px;
+width: 275px;
+background: linear-gradient(135deg, #00246b, #7fa3dc);
+border-radius:10px;
+font-family: var(--secondary-font);
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 20px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+
+}
+
+.ds-box-1:hover,
+.ds-box-2:hover,
+.ds-box-3:hover,
+.ds-box-4:hover,
+.ds-box-5:hover,
+.ds-box-6:hover {
+transform: translateY(-5px);
+box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+.ds-webbg-1,.ds-webbg-2
+{
+display: flex;
+}
+.ds-box-icon,.ds-icon-code-block {
+height:50px;
+width:50px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin:0 auto;
+
+}
+
+
+
+.ds-box-text {
+padding: 0 10px;
+}
+
+.ds-box-text p {
+margin: 0;
+font-size: 18px;
+line-height: 24px;
+font-family: var(--secondary-font);
+font-weight: 500;
+}
+
+.ds-boxes p {
+color: white;
+font-size: 18px;
+padding: 15px;
+line-height: 1.3;
+font-family: var(--secondary-font);
+}
+
+/* Professional Section */
+.ds-professional {
+padding: 40px 20px;
+margin-top: 100px;
+background-color: #1f2a44;
+position: relative;
+overflow: hidden;
+}
+
+.ds-professional::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: linear-gradient(45deg, rgba(0, 36, 107, 0.5), rgba(127, 163, 220, 0.5));
+z-index: 0;
+animation: backgroundPulse 5s infinite alternate;
+}
+
+@keyframes backgroundPulse {
+from {
+  opacity: 0.6;
+}
+to {
+  opacity: 0.8;
+}
+}
+
+.ds-professional h1 {
+position: relative;
+z-index: 1;
+text-align: center;
+color: #ffffff;
+font-size: 32px;
+margin-bottom: 20px;
+font-family: var(--primary-font);
+animation: fadeInDown 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+from {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.ds-professinal-boxes {
+display: flex;
+justify-content: center;
+gap: 20px;
+padding: 20px;
+position: relative;
+z-index: 1;
+}
+
+.ds-professional-box-one,
+.ds-professional-box-two,
+.ds-professional-box-three {
+position: relative;
+height: 450px;
+width: 330px;
+padding: 30px 20px 20px 20px;
+background: linear-gradient(135deg, #00246b, #7fa3dc);
+border-radius: 0 30px 0 30px;
+font-family: var(--primary-font);
+color: #fff;
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+animation: fadeInUp 1s ease-out;
+animation-delay: 0.5s;
+animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+from {
+  opacity: 0;
+  transform: translateY(20px);
+}
+to {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+.ds-professional-box-one:hover,
+.ds-professional-box-two:hover,
+.ds-professional-box-three:hover {
+transform: translateY(-5px);
+box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+.ds-professional-ds-icon-code-block {
+
+top: 15px;
+left: 15px;
+height: 40px;
+width: 40px;
+color: #fff;
+}
+
+.ds-professional-content {
+margin-top: 70px;
+color: #fff;
+font-family: var(--secondary-font);
+font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+position: relative;
+z-index: 1;
+}
+
+.ds-professional-content h3 {
+font-size: 22px;
+margin-bottom: 15px;
+font-family: var(--primary-font);
+}
+
+.ds-professional-content ul {
+list-style: disc inside;
+margin: 0;
+padding: 0;
+}
+
+.ds-professional-content ul li {
+margin-bottom: 10px;
+line-height: 1.5;
+font-size: 16px;
+font-family: var(--secondary-font);
+}
+
+/* FAQ Section */
+.ds-faq_container {
+text-align: center;
+padding: 40px 20px;
+}
+
+.ds-faq_container h2{
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  font-weight: 600;
+} 
+.ds-faq {
+font-size: 24px;
+font-weight: 400;
+margin-bottom: 10px;
+font-family: var(--primary-font);
+}
+
+/* Service Contact Section */
+.ds-service-contact {
+width: 90%;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+background: linear-gradient(123.87deg, rgba(254, 249, 255, 0.7) -37.82%, rgba(170, 194, 232, 0.7) 106.22%);
+box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+border-radius: 0 30px;
+padding: 40px 20px;
+margin: 40px auto;
+font-family: var(--primary-font);
+position: relative;
+overflow: hidden;
+animation: containerFadeIn 1s ease-out;
+}
+
+@keyframes containerFadeIn {
+from {
+  opacity: 0;
+  transform: scale(0.95);
+}
+to {
+  opacity: 1;
+  transform: scale(1);
+}
+}
+
+.ds-service-contact-img {
+flex: 1;
+min-width: 260px;
+max-width: 400px;
+}
+
+.ds-service-contact-img img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease;
+}
+
+.ds-service-contact-img img:hover {
+transform: scale(1.05);
+}
+
+.ds-service-contact-content {
+flex: 2;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 20px;
+font-family: var(--secondary-font);
+animation: contentSlideIn 1.2s ease-out;
+}
+
+@keyframes contentSlideIn {
+from {
+  opacity: 0;
+  transform: translateX(30px);
+}
+to {
+  opacity: 1;
+  transform: translateX(0);
+}
+}
+
+.ds-service-contact-content h1,
+.ds-service-contact-content h2 {
+font-size: 32px;
+margin-bottom: 15px;
+font-family: var(--primary-font);
+color: #00246b;
+font-weight: 600;
+}
+
+.ds-service-contact-content p {
+margin-top: 20px;
+font-size: 18px;
+font-weight: 200;
+font-family: var(--secondary-font);
+color: #333;
+}
+
+.ds-service-contact-content button {
+height: 50px;
+width: 250px;
+background: linear-gradient(to left, #003cb4, #00359f);
+border: none;
+border-radius: 30px;
+color: white;
+font-size: 20px;
+font-weight: 450;
+margin-top: 60px;
+font-family: var(--primary-font);
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ds-service-contact-content button:hover {
+background: linear-gradient(to left, #0056b3, #0048a3);
+transform: translateY(-3px);
+box-shadow: rgba(0, 0, 0, 0.45) 0px 7px 20px;
+}
+
+
+.professional-ds-icon-code-block {
+position: absolute;
+top: 15px;
+left: 15px;
+height: 40px; /* Adjust icon size */
+width: 40px; /* Adjust icon size */
+color: #fff;
+}
+
+/* ======================================================================
+    Responsiveness 
+=========================================================================*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+.ds_dev_hero {
+  display: flex;
+  flex-direction: column; /* Stack elements for mobile */
+  height: auto;
+  padding: 40px 15px;
+  text-align: center;
+  gap: 30px;
+}
+
+.ds_dev_hero_one {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -118px;
+}
+
+.ds_dev_hero_h1 {
+  font-size: 26px; /* Slightly smaller for mobile */
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+
+.ds_dev_hero_one p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+.ds_dev_hero_two {
+  display: flex;
+  justify-content: center;
+ 
+}
+
+.ds_dev_hero_two img {
+  height: 280px;
+  width: auto;
+}
+
+.ds_dev_hero_one button {
+  width: 100%;
+  max-width: 200px;
+  height: 48px;
+  font-size: 1rem;
+  border-radius: 12px;
+}
+
+.ds-why_box {
+  margin: 25px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.ds-sub-heading {
+  font-size: 16px;
+  line-height: 26px;
+  overflow: hidden;
+  margin: 10px 20px;
+}
+
+.ds-sub-text {
+  font-size: 16px !important;
+  line-height: 26px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.ds-sevice {
+  font-size: 22px;
+}
+
+/* Boxes */
+.ds-boxes {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.ds-box {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.ds-box-1,
+.ds-box-2,
+.ds-box-3,
+.ds-box-4,
+.ds-box-5,
+.ds-box-6 {
+width: 80%;
+height:260px;
+background: linear-gradient(135deg, #00246b, #7fa3dc);
+border-radius:10px;
+font-family: var(--secondary-font);
+color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 20px;
+box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+margin: 0 auto;
+}
+
+.ds-properties {
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.ds-box-icon,
+.ds-icon-code-block {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin-top: 12px;
+ 
+}
+
+.ds-boxes p {
+  font-size: 16px;
+  padding: 10px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* Professional Boxes */
+.ds-professinal-boxes {
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.ds-professional-box-one,
+.ds-professional-box-two,
+.ds-professional-box-three {
+  width: 90%;
+  height: auto;
+  padding: 20px;
+}
+
+.ds-professional h1 {
+  font-size: 26px;
+}
+
+/* Service Contact */
+.ds-service-contact {
+  flex-direction: column;
+  padding: 20px;
+  margin: 40px auto;
+}
+
+.ds-service-contact-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  
+}
+
+.ds-service-contact-img img {
+ min-width: 80%;
+ max-width:80%;
+ margin-left: 31px;
+}
+
+.ds-service-contact-content h1 {
+  font-size: 24px;
+  line-height: 26px;
+  margin: 10px 0;
+  text-align:center;
+}
+
+.ds-service-contact-content p {
+  font-size: 16px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.ds-service-contact-content button {
+  width: 100%;
+  max-width: 200px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+/* Hide Background Images for Performance */
+.ds-webbg-1,
+.ds-webbg-2 {
+  display: none;
+}
+}
+
+/* ======================================================================
+    Responsiveness for min-width: 376px to max-width: 425px
+=========================================================================*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+/* Hero Section */
+.ds_dev_hero {
+  display: flex;
+  flex-direction: column; /* Stack elements for mobile */
+  height: auto;
+  padding: 60px 20px;
+  text-align: center;
+  gap: 40px;
+}
+
+.ds_dev_hero_one {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -75px;
+ 
+}
+
+.ds_dev_hero_h1 {
+  font-size: 28px; /* Slightly bigger for this screen size */
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.ds_dev_hero_one p {
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.ds_dev_hero_two {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.ds_dev_hero_two img {
+  height: 300px;
+  width: auto;
+}
+
+.ds_dev_hero_one button {
+  width: 100%;
+  max-width: 240px;
+  height: 50px;
+  font-size: 1.1rem;
+  border-radius: 14px;
+}
+
+/* Why Box */
+.ds-why_box {
+  margin: 30px auto;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.ds-sub-heading {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.ds-sub-text {
+  font-size: 22px !important;
+  margin-top: 6px;
+  
+}
+
+.ds-sevice {
+  font-size: 24px;
+}
+
+/* Boxes */
+.ds-boxes {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+
+.ds-box{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-left: 8px;
+}
+
+.ds-box-1,
+.ds-box-2,
+.ds-box-3,
+.ds-box-4,
+.ds-box-5,
+.ds-box-6 {
+  width: 90%;
+  height: 220px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 10px;
+}
+
+.ds-properties {
+  font-size: 24px;
+  margin-top: 25px;
+}
+
+.ds-box-icon,
+.ds-icon-code-block {
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.ds-boxes p {
+  font-size: 15px;
+  padding: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Professional Boxes */
+.ds-professinal-boxes {
+  flex-direction: column;
+  align-items: center;
+  padding: 18px;
+}
+
+.ds-professional-box-one,
+.ds-professional-box-two,
+.ds-professional-box-three {
+  width: 95%;
+  height: auto;
+  padding: 22px;
+}
+
+.ds-professional h1 {
+  font-size: 26px;
+}
+
+/* Service Contact */
+.ds-service-contact {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 60px  auto;
+  text-align: center;
+  padding: 25px;
+}
+
+.ds-service-contact-content {
+
+  align-items: center;
+  padding: 12px;
+}
+
+.ds-service-contact-img img {
+  margin-left: 0;
+  width: 220px;
+  height: 220px;
+}
+
+.ds-service-contact-content h1 {
+  font-size: 26px;
+  margin: 12px 0;
+  text-align: center;
+}
+
+.ds-service-contact-content p {
+  font-size: 17px;
+  margin: 12px 0;
+}
+
+.ds-service-contact-content button {
+  width: 100%;
+  max-width: 220px;
+  font-size: 19px;
+  margin-top: 35px;
+}
+
+/* Hide Background Images for Performance */
+.ds-webbg-1,
+.ds-webbg-2 {
+  display: none;
+}
+}
+
+
+/* ======================================================================
+    Responsiveness for min-width: 426px to max-width: 599px
+=========================================================================*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+/* Hero Section */
+.ds_dev_hero {
+  display: flex;
+  height: auto;
+  padding: 60px 30px;
+  text-align: center;
+  gap: 40px;
+}
+
+.ds_dev_hero_one {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -25px;
+}
+
+.ds_dev_hero_h1 {
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+
+.ds_dev_hero_one p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+}
+
+.ds_dev_hero_two {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ds_dev_hero_two img {
+  height: 280px;
+  width: auto;
+}
+
+.ds_dev_hero_one button {
+  width: 100%;
+  max-width: 230px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 14px;
+}
+
+/* Why Box */
+.ds-why_box {
+  margin: 30px auto;
+  padding: 0 25px;
+  text-align: center;
+}
+
+.ds-sub-heading {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.ds-sub-text {
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.ds-sevice {
+  font-size: 26px;
+}
+
+/* Boxes */
+.ds-boxes {
+  flex-direction: column;
+  align-items: center;
+}
+
+.ds-box {
+  display: grid;
+grid-template-columns: repeat(3,1fr);
+gap:20px;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+}
+
+.ds-box-1,
+.ds-box-2,
+.ds-box-3,
+.ds-box-4,
+.ds-box-5,
+.ds-box-6 {
+  
+width: 100%;
+height:260px;
+padding: 20px;
+background-color: #fff;
+border-radius: 0px 30px 0px 30px;
+background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+padding: 20px;
+
+}
+
+.ds-properties {
+  font-size: 26px;
+  margin-top: 25px;
+}
+
+.ds-box-icon,
+.ds-icon-code-block {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.ds-boxes p {
+  font-size: 16px;
+  padding: 14px;
+  line-height: 26px;
+  text-align: center;
+}
+
+/* Professional Boxes */
+.ds-professinal-boxes {
+  align-items: center;
+  padding: 20px;
+}
+
+.ds-professional-box-one,
+.ds-professional-box-two,
+.ds-professional-box-three {
+  width: 330px;
+  height: 480px;
+  padding: 25px;
+}
+
+.ds-professional h1 {
+  font-size: 28px;
+}
+
+/* Service Contact */
+.ds-service-contact {
+  
+  text-align: center;
+  padding: 30px;
+}
+
+.ds-service-contact-content {
+  align-items: center;
+  padding: 15px;
+}
+
+.ds-service-contact-img img {
+  margin-left: 0;
+  width: 250px;
+  height: 250px;
+}
+
+.ds-service-contact-content h1 {
+  font-size: 28px;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.ds-service-contact-content p {
+  font-size: 18px;
+  margin: 15px 0;
+  text-align: justify;
+}
+
+.ds-service-contact-content button {
+  width: 100%;
+  max-width: 250px;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+/* Hide Background Images for Performance */
+.ds-webbg-1,
+.ds-webbg-2 {
+  display: none;
+}
+}
+
+
+
+
+
+/* ======================================================================
+    Responsiveness for min-width: 769px to max-width: 1024px
+=========================================================================*/
+@media (min-width: 1281px) {
+/* Hero Section */
+.ds_dev_hero_two img {
+  height: 390px;
+  margin-bottom: 20px;
+}
+
+.ds_dev_hero_h1 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.ds_dev_hero_one button {
+  width: 150px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.ds-properties {
+  font-size: 36px;
+}
+
+/* Background Elements */
+.ds-webbg-1 {
+  height: 500px;
+  width: 80px;
+  position: absolute;
+  top: 0;
+  left: 5px;
+  opacity: 1;
+}
+
+.digiytal-webbg-2 {
+  right: 10px;
+}
+
+/* Boxes Layout */
+.ds-box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.ds-box_txt {
+  font-size: 16px;
+  margin-top: -15px;
+  text-align: center;
+}
+
+.ds-box-1,
+.ds-box-2,
+.ds-box-3,
+.ds-box-4,
+.ds-box-5,
+.ds-box-6 {
+  height: 300px;
+  width: 260px;
+  background-color: #fff;
+  border-radius: 0px 30px 0px 30px;
+  background: linear-gradient(
+    256.59deg,
+    #00246b -98.59%,
+    #264287 -43.06%,
+    #4361a4 12.47%,
+    #6081c0 67.99%,
+    #7fa3dc 123.52%
+  );
+  padding: 10px;
+}
+
+.ds-boxes p {
+  color: white;
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: left;
+}
+
+/* Professional Boxes */
+.ds-professional-box-one,
+.ds-professional-box-two,
+.ds-professional-box-three {
+  height: 480px;
+  width: 330px;
+  padding: 35px;
+  background: linear-gradient(to left, #00246b, #7fa3dc);
+  border-radius: 0px 30px 0px 30px;
+}
+
+.ds-professional-content {
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.ds-professional h2 {
+  color: #ffffff;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+/* Service Contact */
+.ds-service-contact-img img {
+  margin-left: 50px;
+  width: 260px;
+  height: 260px;
+}
+
+.ds-service-contact-content {
+  padding: 0;
+}
+
+.ds-service-contact-content h1 {
+  font-size: 28px;
+}
+
+.ds-webbg-1
+{
+height:540px;
+left:20px;
+top:0;
+}
+.ds-webbg-2
+{
+height:540px;
+right: 0px;
+top:0
+}
+
+
+}

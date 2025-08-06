@@ -1,0 +1,1379 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.ai_app_dev_hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  width: 100%;
+  padding: 20px;
+  gap: 50px;
+  background: var(--bglinear-gradient);
+}
+
+.ai_app_dev_hero_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ai_app_dev_hero_two img {
+  margin-top: 100px;
+  height: 350px;
+  width: auto;
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.ai_app_dev_hero_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  font-family: var(--secondary-font);
+}
+
+.ai_app_dev_hero_h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 36px;
+  font-weight: 550;
+  margin-bottom: 50px;
+  width: 80%;
+  font-family: var(--primary-font);
+}
+
+.ai_app_dev_hero_h1 span {
+  margin-left: 50px;
+}
+
+.ai_app_dev_hero_one p {
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+}
+
+.ai_app_dev_hero_one button {
+  width: 180px;
+  height: 60px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 25px;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: var(--secondary-font);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai_app_dev_hero_one button:hover {
+  background: linear-gradient(to right, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Why Choose Us Section */
+.ai_why_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  margin-top: 20px;
+}
+
+.ai_sub-heading,
+.ai_sub-text {
+  display: block;
+  text-align: center;
+}
+
+.ai_sub-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ai_sub-text {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.ai-text-highlight {
+  color: #7fa3dc !important;
+}
+
+.ai_properties {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+/* Background Images */
+.ai_aibg-1,
+.ai_aibg-2 {
+  height: 600px;
+  width: 175px;
+  position: absolute;
+  top: 0;
+  opacity: 0.7;
+}
+
+.ai_aibg-1 {
+  left: 20px;
+}
+
+.ai_aibg-2 {
+  right: 20px;
+  opacity: 0.5;
+}
+
+/* Boxes Section */
+.ai_boxes {
+  display: flex;
+  justify-content: center; /* Center boxes horizontally */
+  align-items: center; /* Center boxes vertically */
+  gap: 30px; /* Adjusted gap between boxes */
+  position: relative; /* For background images */
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  position:relative;
+}
+
+.ai_box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0  auto; /* Center horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.ai_box-1,
+.ai_box-2,
+.ai_box-3,
+.ai_box-4,
+.ai_box-5,
+.ai_box-6 {
+  height: 300px;
+  width: 275px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius:10px;
+  font-family: var(--secondary-font);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.ai_box-1:hover,
+.ai_box-2:hover,
+.ai_box-3:hover,
+.ai_box-4:hover,
+.ai_box-5:hover,
+.ai_box-6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+
+.ai_icon-code-block {
+  height: 50px; /* Adjust icon size for better visibility */
+  width: 50px;
+  color: #ffffff; /* White color for contrast */
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners for better UI */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  margin-left: 10px;
+  /* margin-top: -50px; */
+}
+
+/* Ensuring consistent icon alignment */
+.ai_box-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.ai_box-text {
+  padding: 0 10px;
+}
+
+.ai_box-text p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+.ai_boxes p {
+  color: white;
+  font-size: 18px;
+  padding: 15px;
+  line-height: 1.3;
+  font-family: var(--secondary-font);
+}
+
+/* Professional Section */
+.ai_professional {
+  padding: 40px 20px;
+  margin-top: 100px;
+  background-color: #1f2a44;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai_professional::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 36, 107, 0.5), rgba(127, 163, 220, 0.5));
+  z-index: 0;
+  animation: backgroundPulse 5s infinite alternate;
+}
+
+@keyframes backgroundPulse {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 0.8;
+  }
+}
+
+.ai_professional h1 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+  animation: fadeInDown 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ai_professinal-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.ai_professional-box-one,
+.ai_professional-box-two,
+.ai_professional-box-three {
+  position: relative;
+  height: 450px;
+  width: 330px;
+  padding: 30px 20px 20px 20px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--primary-font);
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ai_professional-box-one:hover,
+.ai_professional-box-two:hover,
+.ai_professional-box-three:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+.ai_app_icon-code-block{
+
+  height: 100px;
+  width: 40px;
+  color: #fff;
+}
+
+.ai_professional-content {
+  margin-top: 80px;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.ai_professional-content h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 550;
+  font-family: var(--primary-font);
+}
+
+.ai_professional-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.ai_professional-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 20px;
+  font-family: var(--secondary-font);
+}
+
+/* FAQ Section */
+.ai_faq_container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ai_faq {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: var(--primary-font);
+}
+
+/* Service Contact Section */
+.ai_service-contact {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(123.87deg, rgba(254, 249, 255, 0.7) -37.82%, rgba(170, 194, 232, 0.7) 106.22%);
+  box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0 30px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  font-family: var(--primary-font);
+  position: relative;
+  overflow: hidden;
+  animation: containerFadeIn 1s ease-out;
+}
+
+@keyframes containerFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.ai_faq{
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  font-size: 28px;
+}
+.ai_faq_container h2{
+  font-family: var(--primary-font);
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.ai_service-contact-img {
+
+  min-width: 260px;
+  max-width: 400px;
+}
+
+.ai_service-contact-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.ai_service-contact-img img:hover {
+  transform: scale(1.05);
+}
+
+.ai_service-contact-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: var(--secondary-font);
+  animation: contentSlideIn 1.2s ease-out;
+}
+
+@keyframes contentSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.ai_service-contact-content h1,
+.ai_service-contact-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+  color: #00246b;
+  font-weight: 600;
+}
+
+.ai_service-contact-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 200;
+  font-family: var(--secondary-font);
+  color: #333;
+}
+
+.ai_service-contact-content button {
+  height: 50px;
+  width: 250px;
+  background: linear-gradient(to left, #003cb4, #00359f);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 450;
+  margin-top: 60px;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai_service-contact-content button:hover {
+  background: linear-gradient(to left, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 7px 20px;
+}
+
+
+
+/* ========================================================================
+                    Responsiveness
+==========================================================================*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .ai_app_dev_hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 50px 10px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .ai_app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -118px;
+  }
+
+  .ai_app_dev_hero_h1 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 25px;
+  }
+
+  .ai_app_dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .ai_app_dev_hero_one p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
+
+  .ai_app_dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ai_app_dev_hero_two img {
+    height: 280px;
+    width: auto;
+   
+    
+  }
+
+  .ai_app_dev_hero_one button {
+    width: 100%;
+    max-width: 220px;
+    height: 48px;
+    font-size: 1rem;
+    border-radius: 12px;
+  }
+
+  /* AI Why Box */
+  .ai_why_box {
+    margin: 25px auto;
+    padding: 0 20px;
+  }
+
+  .ai_sub-heading {
+    font-size: 16px;
+    line-height: 26px;
+    overflow: hidden;
+    margin: 10px 20px;
+  }
+
+  .ai_sub-text {
+    font-size: 20px !important;
+    line-height: 26px;
+    margin-top: 6px;
+    overflow: hidden;
+  }
+
+  .sevice {
+    font-size: 24px;
+  }
+
+  .ai_boxes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .ai_box {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .ai_box-1,
+  .ai_box-2,
+  .ai_box-3,
+  .ai_box-4,
+  .ai_box-5,
+  .ai_box-6 {
+    width: 90%;
+    height: auto;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: auto
+  }
+  .ai_boxes p
+  {
+    text-align: center;
+  }
+
+  .ai_properties {
+    font-size: 22px !important;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .ai_box-icon .icon-code-block {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .ai_boxes p {
+    font-size: 17px;
+    padding: 12px;
+    line-height: 24px;
+  }
+
+  /* AI Professional Boxes */
+  .ai_professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px;
+  }
+
+  .ai_professional-box-one,
+  .ai_professional-box-two,
+  .ai_professional-box-three {
+    width: 95%;
+    height: auto;
+    padding: 22px;
+  }
+  .ai_professional h1
+  {
+    font-size: 24px;
+  }
+
+  .ai_professional h2 {
+    font-size: 26px;
+  }
+
+  /* Service Contact */
+  .ai_service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding:20px 0;
+    margin: 20px auto;
+    width:90%;
+  }
+
+  .ai_service-contact-content {
+    align-items: center !important;
+    padding: 0px 10px;
+    margin: 0 10px;
+    
+  }
+
+
+
+  .ai_service-contact-img img {
+    min-width: 80%;
+    max-width: 80%;
+    margin-left: -23px;
+  }
+
+  .ai_service-contact-content   h1{
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .ai_service-contact-content p {
+    font-size: 16px;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .ai_service-contact-content button {
+    width: 200px;
+    height: 45px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  /* Hide Background Images for Performance */
+  .ai_webbg-1,
+  .ai_webbg-2 {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .ai_app_dev_hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .ai_app_dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -100px;
+  }
+
+  .ai_app_dev_hero_h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  .ai_app_dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .ai_app_dev_hero_one p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .ai_app_dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ai_app_dev_hero_two img {
+    height: 300px;
+    width: auto;
+  }
+
+  .ai_app_dev_hero_one button {
+    width: 100%;
+    max-width: 240px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 14px;
+  }
+
+  /* AI Why Box */
+  .ai_why_box {
+    margin: 30px auto;
+    padding: 0 25px;
+  }
+
+  .ai_sub-heading {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .ai_sub-text {
+    font-size: 24px !important;
+    line-height: 30px;
+  }
+
+  .sevice {
+    font-size: 26px;
+  }
+
+  .ai_boxes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .ai_box {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-left: 8px;
+    
+  }
+
+  .ai_box-1,
+  .ai_box-2,
+  .ai_box-3,
+  .ai_box-4,
+  .ai_box-5,
+  .ai_box-6 {
+    width: 90%;
+    height: 220px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: linear-gradient(135deg, #00246b, #7fa3dc);
+    border-radius: 10px;
+  }
+
+  .ai_properties {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  .ai_box-icon .icon-code-block {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .ai_boxes p {
+    font-size: 15px;
+    padding: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  /* AI Professional Boxes */
+  .ai_professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .ai_properties {
+    font-size: 28px;
+    margin: 0 40px;
+  }
+
+  .ai_professional-box-one,
+  .ai_professional-box-two,
+  .ai_professional-box-three {
+    width: 92%;
+    height: auto;
+    padding: 25px;
+  }
+
+  .ai_professional h1 {
+    font-size: 26px;
+  }
+
+  /* Service Contact */
+  .ai_service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 8px;
+  }
+
+  .ai_service-contact-content {
+    align-items: center;
+    padding: 0px;
+  }
+
+  .ai_service-contact-img img {
+    margin-left: 0;
+    width: 180px;
+    height: 220px;
+  }
+
+  .ai_service-contact-content h1 {
+    font-size: 26px;
+    margin: 14px 0;
+    line-height: 28px;
+    text-align: left;
+  }
+
+  .ai_service-contact-content p {
+    font-size: 17px;
+    margin: 12px 0;
+    text-align: left;
+  }
+
+  .ai_service-contact-content button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 20px;
+    margin-top: 35px;
+  }
+
+  /* Hide Background Images for Performance */
+  .ai_webbg-1,
+  .ai_webbg-2 {
+    display: none;
+  }
+}
+
+
+@media (min-width:769px) and (max-width:1024px)
+{
+  .ai_app_dev_hero
+{
+  display: flex;
+  height: auto;
+  padding: 60px 25px;
+  text-align: center;
+  gap: 40px;
+}
+.ai_app_dev_hero_one
+{
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin-top: -25px;
+}
+  
+  .ai_app_dev_hero_two img {
+    height: 300px;
+    margin-bottom: 18px;
+}
+.ai_app_dev_hero_h1
+{
+  font-size: 28px;
+  line-height: 32px;
+  margin-bottom: 30px;
+  text-align: left;
+  width:100%;
+}
+.ai_app_dev_hero p
+{
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 20px;
+  text-align: left;
+  width:100%;
+}
+.ai_app_dev_hero_one button {
+  width: 100%;
+  max-width: 230px;
+  height: 50px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  /* padding: 20px; */
+}
+.ai_properties
+{
+  font-size: 32px;
+}
+.ai-aibg-1.ai-aibg-2
+{
+  display: none;
+}
+.ai_boxes
+{
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+
+.ai_box {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.ai_box_txt {
+  font-size: 14px;
+  margin-top: -20px;
+  text-align: center;
+}
+
+.ai_box-1, .ai_box-2, .ai_box-3, .ai_box-4, .ai_box-5, .ai_box-6 {
+
+  width: 100%;
+  height:260px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 0px 30px 0px 30px;
+  background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+  padding: 20px;
+}
+.ai_box  p {
+  color: white;
+  margin-top:15px;
+  line-height:20px;
+  font-size: 15px;
+  /* padding: 15px; */
+  text-align: center;
+}
+.ai_professional-box-one, .ai_professional-box-two, .ai_professional-box-three {
+  height: 610px !important;
+  width: 300px;
+  padding: 30px;
+  background: linear-gradient(to left, #00246b, #7fa3dc);
+  border-radius: 0px 30px 0px 30px;
+  color:#fff;
+}
+.ai_professional-content {
+  color: #ffffff;
+  margin-top: 8px;
+}
+.ai_professional h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 16px !important;
+}
+.ai_professional-content ul li
+{
+  line-break: 23px;
+}
+.ai_service-contact-img img {
+  margin-left: 40px;
+  width: 234px;
+  height: 240px;
+}
+.ai_service-contact-content
+{
+   padding: 0;
+}
+.ai_service-contact-content h1 {
+  font-size: 25px;
+}
+
+.ai_webbg-1,
+  .ai_webbg-2 {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .ai_app_dev_hero_two img {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  .ai_app_dev_hero_h1 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .ai_app_dev_hero_one button {
+    width: 129px;
+    height: 45px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+  .ai_sub-text
+  {
+    font-size: 2.2rem;
+  }
+
+  .ai_properties {
+    font-size: 32px;
+  }
+
+  .ai_webbg-1 {
+    height: 480px;
+    width: 100px;
+    position: absolute;
+    top: 0;
+    left: -30px;
+    opacity: 1;
+  }
+
+  .ai_webbg-2 {
+    right: -30px;
+  }
+
+  .ai_box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    
+  
+
+  }
+
+  .ai_box_txt {
+    font-size: 14px;
+    margin-top: -20px;
+    text-align: center;
+  }
+
+  .ai_box-1,
+  .ai_box-2,
+  .ai_box-3,
+  .ai_box-4,
+  .ai_box-5,
+  .ai_box-6 {
+    height: 260px;
+    width: 240px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+    padding: 10px;
+  }
+   
+  }
+  .ai_box-icon
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .ai_boxes p {
+    color: white;
+    margin-top: 18px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .ai_professional-box-one,
+  .ai_professional-box-two,
+  .ai_professional-box-three {
+    height: 460px;
+    width: 320px;
+    padding: 35px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+    color: #fff;
+  }
+
+  .ai_professional-content {
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .ai_professional h2 {
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-size: 18px !important;
+  }
+
+  .ai_professional-content ul li {
+    line-height: 25px;
+  }
+
+  .ai_service-contact-img img {
+    margin-left: 40px;
+    width: 234px;
+    height: 240px;
+  }
+
+  .ai_service-contact-content {
+    padding: 0;
+  }
+
+  .ai_service-contact-content h1 {
+    font-size: 25px;
+  }
+
+  .ai_webbg-1,
+  .ai_webbg-2 {
+    display: none;
+  }
+
+.ai_webbg-1
+
+{
+  height:470px;
+  left:40px;
+}
+.ai_webbg-2
+{
+  height:470px;
+  right: 0px;
+}
+
+
+
+
+
+@media (min-width: 1281px)  {
+  
+  /* ai App Development Hero Section */
+  .ai_app_dev_hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 70px 40px;
+    text-align: left;
+  }
+
+  .ai_app_dev_hero_one {
+    width: 50%;
+  }
+
+  .ai_app_dev_hero_h1 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+  }
+
+  .ai_app_dev_hero_one p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .ai_app_dev_hero_two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ai_app_dev_hero_two img {
+    height: 350px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .ai_app_dev_hero_one button {
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+  }
+
+  /* ai App Properties */
+  .ai_app_properties {
+    font-size: 34px;
+    margin-top: -60px;
+  }
+  .ai_app_sub-text
+{
+  font-size: 2.2rem;
+}
+
+  /* ai App Boxes */
+  .ai_box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .ai_app_box_txt {
+    font-size: 16px;
+    margin-top: -10px;
+    text-align: center;
+  }
+
+  .ai_box-1,
+  .ai_box-2,
+  .ai_box-3,
+  .ai_box-4,
+  .ai_box-5,
+  .ai_box-6 {
+    height: 300px;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+    padding: 10px;
+  }
+
+  .ai-boxes p {
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: left;
+  }
+  .ai_webbg-1,.ai_webbg-2
+{
+  display: flex;
+}
+.ai_webbg-1
+{
+  height:470px;
+  left:130px;
+  top:0;
+}
+.ai_webbg-2
+{
+  height:470px;
+  right: 90px;
+  top:0
+}
+
+  /* Service Contact Section */
+  .ai-service-contact-img img {
+    width: 100%;
+    height: 260px;
+  }
+
+  .ai-service-contact-content h1 {
+    font-size: 30px;
+  }
+
+  /* Hide Background Images for Performance */
+ 
+}
+

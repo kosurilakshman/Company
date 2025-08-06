@@ -1,0 +1,666 @@
+:root {
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+/* Why Choose Section - Full Width */
+.whyChoose-section {
+    font-family: var(--primary-font);
+    width: 100%;
+    padding: 30px 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+.whyChoose-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    margin-left: 200px;
+    font-family: var(--secondary-font);
+}
+
+.chooseUs-border {
+    width: 50px;
+    height: 5px;
+    background-color: #000;
+}
+
+.whyChoose-subheading {
+    font-size: 30px;
+    font-weight: 600;
+    color: #333;
+}
+
+/* Card Container - Full Width */
+.card-box {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7fa3dc;
+    position: relative;
+    padding: 60px 20px;
+    box-sizing: border-box;
+    margin-top: -10px;
+}
+
+/* Left & Right Cards - Full Width Alignment */
+.card-left, .card-right {
+    width: 38%; /* Adjusted to avoid overflow */
+    max-width: 600px;
+    height: 200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    font-family: var(--primary-font);
+    color: #222;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-out;
+    /* transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); */
+    /* transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    /* transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1); */
+    /* transition: transform 0.4s cubic-bezier(0.6, -0.28, 0.735, 0.045); */
+
+    position: absolute;
+    /* cursor: pointer; */
+}
+
+/* Positioning */
+.card-left {
+    left: 12%;
+    top: 5%;
+        
+}
+
+.card-right {
+    right: 12%;
+    bottom: 5%;
+}
+
+.card-title{
+    font-family: var(--primary-font);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 2;
+}
+.card-text{
+    font-family: var(--secondary-font);
+    font-size: 18px;
+    text-align: start;
+    padding: 0px 20px;
+    font-family: 350;
+    text-align: center;
+}
+/* Circle Animations */
+.md-circleLeft, .md-circleRight {
+    height: 140px;
+    width: 80px;
+    background: linear-gradient(to right, #fef9ff, #aac2e8);
+    border-radius: 120px 0 0 120px;
+    position: absolute;
+}
+
+.md-circleLeft {
+    top: 30px;
+    left: 0;
+    transform: rotate(180deg);
+    animation: circleMove 3s ease-in-out infinite alternate;
+}
+
+.md-circleRight {
+    bottom: 10px;
+    right: 0;
+}
+
+@keyframes circleMove {
+    0%, 100% {
+        transform: translateX(-10px);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes circleMove {
+    0%, 100% {
+        transform: rotate(180deg) translateY(-20px);
+    }
+    50% {
+        transform: rotate(180deg) translateY(20px);
+    }
+}
+
+
+
+
+/* =========================================================================================================
+                            Responsiveness
+============================================================================================================*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    /* Why Choose Section */
+    .whyChoose-section {
+      padding: 20px 0; /* Reduced padding for smaller screens */
+    }
+  
+    /* Header */
+    .whyChoose-header {
+      margin-left: 20px; /* Adjusted margin for mobile */
+      flex-direction: column; /* Stack elements vertically */
+      align-items: flex-start;
+      gap: 10px; /* Reduced gap */
+      margin-bottom: 20px; /* Reduced margin */
+    }
+  
+    .whyChoose-subheading {
+      font-size: 24px; /* Smaller font size for mobile */
+      margin-top: 20px;
+    }
+  
+    .chooseUs-border {
+      display: none;
+    }
+  
+    /* Card Container */
+    .card-box {
+      min-height: auto; /* Remove fixed height for flexibility */
+      flex-direction: column; /* Stack cards vertically */
+      padding: 20px 10px; /* Reduced padding */
+      margin-top: 0; /* Remove negative margin */
+    }
+  
+    /* Left & Right Cards */
+    .card-left, .card-right {
+      width: 90%; /* Full width with some margin */
+      max-width: none; /* Remove max-width constraint */
+      height: auto; /* Allow height to adjust to content */
+      position: static; /* Remove absolute positioning */
+      margin: 10px 0; /* Add vertical spacing between cards */
+      padding: 15px; /* Reduced padding */
+    }
+  
+    .card-title {
+      font-size: 20px; /* Smaller title font */
+      line-height: 1.5; /* Adjusted line height */
+      font-weight: 600;
+    }
+  
+    .card-text {
+      font-size: 16px; /* Smaller text font */
+      padding: 10px 10px; /* Reduced padding */
+      font-weight: 400;
+    }
+  
+    /* Circle Animations */
+    .md-circleLeft, .md-circleRight {
+      height: 100px; /* Smaller circles */
+      width: 60px; /* Adjusted width */
+      display: none; /* Optionally hide circles on mobile if they clutter the layout */
+    }
+  
+    .md-circleLeft {
+      top: 10px; /* Adjusted position */
+    }
+  
+    .md-circleRight {
+      bottom: 10px; /* Adjusted position */
+    }
+  
+    @keyframes circleMove {
+      0%, 100% {
+        transform: rotate(180deg) translateY(-10px); /* Reduced movement */
+      }
+      50% {
+        transform: rotate(180deg) translateY(10px);
+      }
+    }
+  }
+
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+    /* Why Choose Section */
+    .whyChoose-section {
+      padding: 25px 0; /* Slightly larger padding than smallest screens */
+    }
+  
+    /* Header */
+    .whyChoose-header {
+      margin-left: 30px; /* Slightly more margin than smallest screens */
+      flex-direction: row; /* Keep horizontal layout */
+      align-items: center;
+      gap: 15px; /* Moderate gap */
+      margin-bottom: 30px; /* Moderate margin */
+    }
+  
+    .whyChoose-subheading {
+      font-size: 26px; /* Slightly larger than mobile */
+      margin-top: 0; /* Reset margin-top */
+    }
+  
+    .chooseUs-border {
+      width: 40px; /* Smaller than desktop but visible */
+      height: 4px; /* Slightly thinner */
+    }
+  
+    /* Card Container */
+    .card-box {
+      min-height: auto; /* Flexible height */
+      flex-direction: column; /* Stack cards vertically */
+      padding: 30px 15px; /* Moderate padding */
+      margin-top: 0; /* Remove negative margin */
+    }
+  
+    /* Left & Right Cards */
+    .card-left, .card-right {
+      width: 85%; /* Slightly less than full width */
+      max-width: 500px; /* Cap width for larger screens in this range */
+      height: auto; /* Adjust to content */
+      position: static; /* Remove absolute positioning */
+      margin: 15px auto; /* Center cards with vertical spacing */
+      padding: 20px; /* Moderate padding */
+    }
+  
+    .card-title {
+      font-size: 20px; /* Slightly larger than smallest screens */
+      line-height: 1.6; /* Adjusted line height */
+      font-weight: 600;
+    }
+  
+    .card-text {
+      font-size: 15px; /* Slightly larger text */
+      padding: 10px 15px; /* Moderate padding */
+      font-weight: 400;
+    }
+  
+    /* Circle Animations */
+    .md-circleLeft, .md-circleRight {
+      height: 120px; /* Slightly larger than smallest screens */
+      width: 70px; /* Adjusted width */
+      display: block; /* Keep visible for this range */
+    }
+  
+    .md-circleLeft {
+      top: 20px; /* Adjusted position */
+    }
+  
+    .md-circleRight {
+      bottom: 20px; /* Adjusted position */
+    }
+  
+    @keyframes circleMove {
+      0%, 100% {
+        transform: rotate(180deg) translateY(-15px); /* Moderate movement */
+      }
+      50% {
+        transform: rotate(180deg) translateY(15px);
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Why Choose Section */
+    .whyChoose-section {
+      padding: 30px 0; /* Match or slightly adjust from base */
+    }
+  
+    /* Header */
+    .whyChoose-header {
+      margin-left: 50px; /* Reduced from base (200px) for this range */
+      flex-direction: row; /* Keep horizontal layout */
+      align-items: center;
+      gap: 20px; /* Match base gap */
+      margin-bottom: 35px; /* Slightly less than base */
+    }
+  
+    .whyChoose-subheading {
+      font-size: 28px; /* Slightly smaller than base (30px) */
+      margin-top: 0; /* Ensure no extra spacing */
+    }
+  
+    .chooseUs-border {
+      width: 45px; /* Slightly smaller than base (50px) */
+      height: 5px; /* Match base */
+    }
+  
+    /* Card Container */
+    .card-box {
+      min-height: 50vh; /* Slightly reduced from base (60vh) */
+      flex-direction: row; /* Use horizontal layout for this range */
+      justify-content: space-around; /* Distribute cards evenly */
+      padding: 40px 20px; /* Slightly reduced padding */
+      margin-top: -5px; /* Less negative margin than base */
+    }
+  
+    /* Left & Right Cards */
+    .card-left, .card-right {
+      width: 45%; /* Wider than smaller ranges, narrower than base (38%) */
+      max-width: 450px; /* Adjusted cap for this range */
+      height: 180px; /* Slightly less than base (200px) */
+      position: static; /* Remove absolute positioning for flex layout */
+      margin: 0; /* Reset margin, handled by flex */
+      padding: 20px; /* Match base padding */
+    }
+  
+    .card-title {
+      font-size: 26px; /* Slightly smaller than base (28px) */
+      line-height: 1.8; /* Adjusted for readability */
+      font-weight: 500; /* Match base */
+    }
+  
+    .card-text {
+      font-size: 17px; /* Slightly smaller than base (18px) */
+      padding: 0 15px; /* Adjusted padding */
+      font-weight: 350; /* Match base (assuming typo corrected) */
+    }
+  
+    /* Circle Animations */
+    .md-circleLeft, .md-circleRight {
+      height: 130px; /* Slightly smaller than base (140px) */
+      width: 75px; /* Adjusted width */
+      display: block; /* Keep visible */
+    }
+  
+    .md-circleLeft {
+      top: 25px; /* Adjusted position */
+    }
+  
+    .md-circleRight {
+      bottom: 15px; /* Adjusted position */
+    }
+  
+    @keyframes circleMove {
+      0%, 100% {
+        transform: rotate(180deg) translateY(-15px); /* Match base range */
+      }
+      50% {
+        transform: rotate(180deg) translateY(15px);
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Card Container */
+    .card-box {
+      min-height: 50vh; /* Slightly reduced from base (60vh) */
+      position: relative; /* Make container a positioning context */
+      padding: 40px 20px; /* Slightly reduced padding */
+      margin-top: -5px; /* Less negative margin than base */
+      display: block; /* Switch from flex to block for absolute positioning */
+      overflow: hidden;
+    }
+  
+    /* Left & Right Cards */
+    .card-left, .card-right {
+        width: 45%; 
+        max-width: 500px;
+        height: 180px;
+        position: absolute;
+        padding: 10px;
+        margin: 0;
+        overflow: hidden;
+    }
+  
+    /* Specific Positioning */
+    .card-left {
+      top: 20px; /* Align to top with padding consideration */
+      left: 20px; /* Align to left with padding consideration */
+    }
+  
+    .card-right {
+      bottom: 20px; /* Align to bottom with padding consideration */
+      right: 22px; /* Align to right with padding consideration */
+    }
+  
+    /* Rest of your existing styles remain unchanged */
+    .whyChoose-section {
+      padding: 30px 0;
+    }
+  
+    .whyChoose-header {
+      margin-left: 50px;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+  
+    .whyChoose-subheading {
+      font-size: 28px;
+      margin-top: 0;
+    }
+  
+    .chooseUs-border {
+      width: 45px;
+      height: 5px;
+    }
+  
+    .card-title {
+      font-size: 22px;
+      line-height: 1.8;
+      font-weight: 500;
+    }
+  
+    .card-text {
+      font-size: 14px;
+      padding: 0 15px;
+      font-weight: 350;
+      text-align: center;
+      margin-top: 10px;
+    }
+  
+    .md-circleLeft, .md-circleRight {
+      height: 130px;
+      width: 75px;
+      display: block;
+    }
+  
+    .md-circleLeft {
+      top: 25px;
+    }
+  
+    .md-circleRight {
+      bottom: 15px;
+    }
+  
+    @keyframes circleMove {
+      0%, 100% {
+        transform: rotate(180deg) translateY(-15px);
+      }
+      50% {
+        transform: rotate(180deg) translateY(15px);
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    /* Card Container */
+    .card-box {
+      min-height: 55vh; /* Slightly increased from 50vh for more vertical space */
+      position: relative; /* Keep as positioning context */
+      padding: 50px 30px; /* Slightly increased padding for larger screens */
+      margin-top: -5px; /* Consistent with previous range */
+      display: block; /* Maintain block for absolute positioning */
+      overflow: hidden;
+    }
+  
+    /* Left & Right Cards */
+    .card-left, .card-right {
+      width: 40%; /* Slightly narrower than 45% to fit wider screen */
+      max-width: 550px; /* Increased max-width for larger screens */
+      height: 190px; /* Slightly taller than 180px for balance */
+      position: absolute; /* Keep absolute positioning */
+      padding: 15px; /* Slightly increased padding */
+      margin: 0; /* Reset margin */
+      overflow: hidden;
+    }
+  
+    /* Specific Positioning */
+    .card-left {
+      top: 20px; /* Adjusted for padding and balance */
+      left: 120px; /* Increased offset for wider screen */
+    }
+  
+    .card-right {
+      bottom: 20px; /* Adjusted for padding and balance */
+      right: 65px; /* Increased offset for wider screen */
+    }
+  
+    /* Rest of the styles */
+    .whyChoose-section {
+      padding: 35px 0; /* Slightly more padding than previous range */
+    }
+  
+    .whyChoose-header {
+      margin-left: 80px; /* Increased from 50px for wider screen */
+      flex-direction: row;
+      align-items: center;
+      gap: 25px; /* Slightly larger gap */
+      margin-bottom: 40px; /* Match base more closely */
+    }
+  
+    .whyChoose-subheading {
+      font-size: 29px; /* Closer to base (30px) */
+      margin-top: 0;
+    }
+  
+    .chooseUs-border {
+      width: 48px; /* Closer to base (50px) */
+      height: 5px;
+    }
+  
+    .card-title {
+      font-size: 22px; /* Slightly larger than previous range (22px) */
+      line-height: 1.9; /* Adjusted for readability */
+      font-weight: 500;
+    }
+  
+    .card-text {
+      font-size: 15px; /* Slightly larger than previous range (16px) */
+      padding: 0 20px; /* Increased padding */
+      font-weight: 350;
+    }
+  
+    .md-circleLeft, .md-circleRight {
+      height: 135px; /* Closer to base (140px) */
+      width: 80px; /* Match base width */
+      display: block;
+    }
+  
+    .md-circleLeft {
+      top: 30px; /* Adjusted for larger layout */
+    }
+  
+    .md-circleRight {
+      bottom: 20px; /* Adjusted for larger layout */
+    }
+  
+    @keyframes circleMove {
+      0%, 100% {
+        transform: rotate(180deg) translateY(-15px); /* Consistent with previous */
+      }
+      50% {
+        transform: rotate(180deg) translateY(15px);
+      }
+    }
+  }
+
+
+  @media only screen and (min-width: 1281px) {
+    /* Card Container */
+    .card-box {
+      min-height: 60vh; /* Further increased for larger screens */
+      position: relative;
+      padding: 60px 40px; /* Increased padding for more spacious layout */
+      margin-top: -5px;
+      display: block;
+    }
+  
+    /* Left & Right Cards */
+    .card-left, .card-right {
+      width: 38%; /* Slightly narrower for larger screen balance */
+      max-width: 600px; /* Increased max-width for very large screens */
+      height: 210px; /* Increased height for content balance */
+      position: absolute;
+      padding: 20px; /* Increased padding for readability */
+      margin: 0;
+      overflow: hidden;
+    }
+  
+    /* Specific Positioning */
+    .card-left {
+      top: 20px; /* Adjusted positioning for larger layout */
+      left: 170px; /* Increased left offset for wider screen */
+    }
+  
+    .card-right {
+      bottom: 20px; /* Adjusted positioning for larger layout */
+      right: 108px; /* Increased right offset for wider screen */
+    }
+  
+    /* Rest of the styles */
+    .whyChoose-section {
+      padding: 40px 0; /* Increased padding */
+    }
+  
+    .whyChoose-header {
+      margin-left: 150px; /* Increased margin for wider screens */
+      flex-direction: row;
+      align-items: center;
+      gap: 30px; /* Larger gap for spacing */
+      margin-bottom: 30px; /* Increased margin for spacing */
+    }
+  
+    .whyChoose-subheading {
+      font-size: 32px; /* Increased font size for larger screens */
+      margin-top: 0;
+    }
+  
+    .chooseUs-border {
+      width: 55px; /* Increased width for visual balance */
+      height: 6px; /* Increased height for visual balance */
+    }
+  
+    .card-title {
+      font-size: 24px; /* Increased font size for larger screens */
+      line-height: 2; /* Adjusted line height */
+      font-weight: 500;
+    }
+  
+    .card-text {
+      font-size: 16px; /* Increased font size for larger screens */
+      padding: 0 25px; /* Increased padding for readability */
+      font-weight: 400;
+    }
+  
+    .md-circleLeft, .md-circleRight {
+      height: 150px; /* Increased height */
+      width: 90px; /* Increased width */
+      display: block;
+    }
+  
+    .md-circleLeft {
+      top: 40px; /* Adjusted for larger layout */
+    }
+  
+    .md-circleRight {
+      bottom: 30px; /* Adjusted for larger layout */
+    }
+  
+    @keyframes circleMove {
+      0%, 100% {
+        transform: rotate(180deg) translateY(-20px); /* Increased translateY */
+      }
+      50% {
+        transform: rotate(180deg) translateY(20px); /* Increased translateY */
+      }
+    }
+  }

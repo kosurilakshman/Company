@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.sanjittechsolutions.in/</loc>
+    <priority>1.00</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+
+  <!-- About Us Page -->
+  <url>
+    <loc>https://www.sanjittechsolutions.in/about</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Contact Us Page -->
+  <url>
+    <loc>https://www.sanjittechsolutions.in/contact</loc>
+    <priority>0.80</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Services Main Page -->
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services</loc>
+    <priority>0.90</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Individual Service Pages -->
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services/web-development</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services/app-development</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services/ai</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services/software-development</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services/data-science</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services/digital-marketing</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <url>
+    <loc>https://www.sanjittechsolutions.in/services/seo</loc>
+    <priority>0.85</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>

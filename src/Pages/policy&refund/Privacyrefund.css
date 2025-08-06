@@ -1,0 +1,252 @@
+/* Base styles (already optimized for large screens >1440px) */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #7FA3DC;
+    --bglinear-gradient: linear-gradient(to right, #00246B, #7FA3DC);
+    --primary-font: 'Poppins', sans-serif;
+    --secondary-font: 'Montserrat', sans-serif;
+}
+
+/* Hero Section */
+.privacy-hero {
+    background: url('../../assets/policy&refundbg.webp') no-repeat center center/cover;
+    height: 70vh;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Hero Box */
+.privacy-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    text-align: center;
+}
+
+.privacy-heading {
+    font-family: var(--primary-font);
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+.privacy-subtitle {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 14px;
+}
+.privacy-policy-box {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 12px;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  line-height: 1.7;
+}
+
+.privacy-policy-box h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+   color: #00246B;
+  text-align: center;
+}
+
+.privacy-policy-box h3 {
+  font-size: 1.4rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+    color: #00246B;
+}
+
+.privacy-policy-box p {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  text-align: justify;
+}
+.refund-policy-box {
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-left: 5px solid #4caf50;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  border-radius: 10px;
+}
+
+.refund-policy-box h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #2e7d32;
+}
+
+.refund-policy-box p {
+  white-space: pre-line; /* Maintains line breaks and spacing */
+}
+ /* Responsiveness */
+ /* ------------------------- Responsive Styles ------------------------- */
+
+/* 320px - 480px: Mobile small */
+@media screen and (max-width: 480px) {
+  .privacy-heading {
+    font-size: 24px;
+  }
+
+  .privacy-subtitle {
+    font-size: 18px;
+  }
+
+  .privacy-policy-box,
+  .refund-policy-box {
+    padding: 1rem;
+  }
+
+  .privacy-policy-box h2,
+  .refund-policy-box h2 {
+    font-size: 1.5rem;
+  }
+
+  .privacy-policy-box h3 {
+    font-size: 1.1rem;
+  }
+
+  .privacy-policy-box p,
+  .refund-policy-box p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 481px - 768px: Mobile large / Tablet portrait */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .privacy-heading {
+    font-size: 26px;
+  }
+
+  .privacy-subtitle {
+    font-size: 20px;
+  }
+
+  .privacy-policy-box,
+  .refund-policy-box {
+    padding: 1.5rem;
+  }
+
+  .privacy-policy-box h2,
+  .refund-policy-box h2 {
+    font-size: 1.75rem;
+  }
+
+  .privacy-policy-box h3 {
+    font-size: 1.2rem;
+  }
+
+  .privacy-policy-box p,
+  .refund-policy-box p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 769px - 1024px: Tablet landscape */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .privacy-heading {
+    font-size: 28px;
+  }
+
+  .privacy-subtitle {
+    font-size: 22px;
+  }
+
+  .privacy-policy-box,
+  .refund-policy-box {
+    padding: 2rem;
+  }
+
+  .privacy-policy-box h2,
+  .refund-policy-box h2 {
+    font-size: 2rem;
+  }
+
+  .privacy-policy-box h3 {
+    font-size: 1.3rem;
+  }
+
+  .privacy-policy-box p,
+  .refund-policy-box p {
+    font-size: 1rem;
+  }
+}
+
+/* 1025px - 1280px: Small desktops */
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .privacy-heading {
+    font-size: 30px;
+  }
+
+  .privacy-subtitle {
+    font-size: 23px;
+  }
+
+  .privacy-policy-box,
+  .refund-policy-box {
+    padding: 2.5rem;
+  }
+
+  .privacy-policy-box h2,
+  .refund-policy-box h2 {
+    font-size: 2.1rem;
+  }
+
+  .privacy-policy-box h3 {
+    font-size: 1.35rem;
+  }
+
+  .privacy-policy-box p,
+  .refund-policy-box p {
+    font-size: 1.05rem;
+  }
+}
+
+/* 1281px - 1440px: Standard desktops */
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+  .privacy-heading {
+    font-size: 32px;
+  }
+
+  .privacy-subtitle {
+    font-size: 24px;
+  }
+
+  .privacy-policy-box,
+  .refund-policy-box {
+    padding: 3rem;
+  }
+
+  .privacy-policy-box h2,
+  .refund-policy-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .privacy-policy-box h3 {
+    font-size: 1.4rem;
+  }
+
+  .privacy-policy-box p,
+  .refund-policy-box p {
+    font-size: 1.1rem;
+  }
+}

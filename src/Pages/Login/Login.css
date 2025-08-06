@@ -1,0 +1,113 @@
+/* Base styles */
+*{
+
+  margin: 0;
+  padding: 0;
+
+
+}
+
+.login-container {
+  padding: 30px;
+  width: 700px;
+  margin: 50px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+h2 {
+  text-align: center;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  padding: 10px;
+  font-size: 1em;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+
+/* 320px - 480px: Small phones */
+@media (max-width: 480px) {
+  .login-container {
+    width: 360px;
+    padding: 20px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 0.9em;
+  }
+}
+
+/* 481px - 768px: Tablets and large phones */
+@media (min-width: 481px) and (max-width: 768px) {
+  .login-container {
+    width: 530px;
+    padding: 25px;
+  }
+
+  .login-form input,
+  .login-form button {
+    font-size: 1em;
+  }
+}
+
+/* 769px - 1024px: Small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .login-container {
+    width: 610px;
+  }
+}
+
+/* 1025px - 1280px: Standard desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .login-container {
+    width: 700px;
+  }
+}
+
+/* 1281px - 1440px: Larger desktops */
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .login-container {
+    width: 700px;
+  }
+}
+
+ 
+/* Responsive Breakpoints */
+
+
+ 

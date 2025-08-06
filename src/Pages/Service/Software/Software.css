@@ -1,0 +1,1669 @@
+:root {
+  --primary-text: 14px;
+  --secondary-text: 24px;
+  --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.software-dev_hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+  padding: 20px;
+  gap: 50px;
+  background: var(--bglinear-gradient);
+}
+
+.software-dev_hero_two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.software-dev_hero_two img {
+  margin-top: 100px;
+  height: 350px;
+  width: auto;
+}
+
+.software-dev_hero_one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  font-family: var(--secondary-font);
+}
+
+.software-dev_hero_h1 {
+  margin-top: 100px;
+  color: white;
+  font-size: 36px;
+  font-weight: 550;
+  margin-bottom: 50px;
+  width: 80%;
+  font-family: var(--primary-font);
+}
+
+.software-dev_hero_h1 span {
+  margin-left: 50px;
+}
+
+.software-dev_hero_one p {
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  margin-bottom: 10px;
+  font-family: var(--secondary-font);
+}
+
+.software-dev_hero_one button {
+  width: 180px;
+  height: 60px;
+  padding: 12px 24px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: 25px;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-family: var(--secondary-font);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.software-dev_hero_one button:hover {
+  background: linear-gradient(to right, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* ==================================================== */
+
+.software-why_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--primary-font);
+  margin-top: 20px;
+}
+
+.software-sub-heading,
+.software-sub-text {
+  display: block;
+  text-align: center;
+}
+
+.software-sub-heading {
+  font-size: 20px;
+  font-weight: 200;
+  font-family: var(--secondary-font);
+}
+
+.software-sub-text {
+  font-size: 35px !important;
+  width: 100% !important;
+  font-family: var(--primary-font);
+  margin-top: 10px;
+}
+
+.software-sevice {
+  font-size: 30px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+
+/* Existing styles for boxes remain the same */
+
+.software-webbg-1 {
+  height: 700px;
+  width: 185px;
+  position: absolute;
+  top: 0;
+  left: -120px;
+  opacity: 0.7;
+}
+
+.software-webbg-2 {
+  height: 700px;
+  width: 185px;
+  position: absolute;
+  top: 0;
+  right: -120px;
+  opacity: 0.5;
+}
+
+.software-boxes {
+  display: flex;
+  justify-content: center; /* Center boxes horizontally */
+  align-items: center; /* Center boxes vertically */
+  gap: 30px; /* Adjusted gap between boxes */
+  position: relative; /* For background images */
+  max-width: 1200px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container */
+  position:relative;
+}
+.software-box
+{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin:   50px; /* Center horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.software-box-1,
+.software-box-2,
+.software-box-3,
+.software-box-4,
+.software-box-5,
+.software-box-6 {
+  height: 300px;
+  width: 275px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--secondary-font);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.software-box-1:hover,
+.software-box-2:hover,
+.software-box-3:hover,
+.software-box-4:hover,
+.software-box-5:hover,
+.software-box-6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+.software-box-content {
+  position: relative;
+  width: 100%;
+}
+
+.software-box-icon {
+  height:50px !important;
+  width:80px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+
+
+.software-box-text {
+  padding: 0 10px;
+}
+
+.software-box-text p {
+  margin-top: 10px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+}
+
+.software-properties {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  font-family: var(--primary-font);
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.software-properties h2{
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+
+
+
+
+.software-boxes p {
+  color: white;
+  font-size: 16px;
+  padding: 15px;
+  line-height: 1.3;
+  font-family: var(--secondary-font);
+}
+
+.software-professional {
+  padding: 40px 20px;
+  margin-top: 100px;
+  background-color: #1f2a44;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.software-professional::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0, 36, 107, 0.5), rgba(127, 163, 220, 0.5));
+  z-index: 0;
+  animation: backgroundPulse 5s infinite alternate;
+}
+
+@keyframes backgroundPulse {
+  from {
+    opacity: 0.6;
+  }
+
+  to {
+    opacity: 0.8;
+  }
+}
+
+.software-professional h2 {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-family: var(--primary-font);
+  animation: fadeInDown 1.5s ease-out;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.software-professinal-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.software-professional-box-one,
+.software-professional-box-two,
+.software-professional-box-three {
+  position: relative;
+  height: 450px;
+  width: 300px;
+  padding: 30px 20px 20px 20px;
+  background: linear-gradient(135deg, #00246b, #7fa3dc);
+  border-radius: 0 30px 0 30px;
+  font-family: var(--primary-font);
+  color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeInUp 1s ease-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.software-professional-box-one:hover,
+.software-professional-box-two:hover,
+.software-professional-box-three:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #001f5c, #5b8ac4);
+}
+
+
+
+.software-professional-content {
+  margin-top: 70px;
+  color: #fff;
+  font-family: var(--secondary-font);
+  font-size: 16px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
+}
+
+.software-professional-content h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+}
+
+.software-professional-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.software-professional-content ul li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  font-size: 16px;
+  font-family: var(--secondary-font);
+}
+
+.software-service-contact {
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(123.87deg, rgba(254, 249, 255, 0.7) -37.82%, rgba(170, 194, 232, 0.7) 106.22%);
+  box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 0 30px;
+  padding: 40px 20px;
+  margin: 40px auto;
+  font-family: var(--primary-font);
+  position: relative;
+  overflow: hidden;
+  animation: containerFadeIn 1s ease-out;
+}
+
+@keyframes containerFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.software-service-contact-img {
+  flex: 1;
+  min-width: 260px;
+  max-width: 400px;
+}
+
+.software-service-contact-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.software-service-contact-img img:hover {
+  transform: scale(1.05);
+}
+
+.software-service-contact-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  font-family: var(--secondary-font);
+  animation: contentSlideIn 1.2s ease-out;
+}
+
+@keyframes contentSlideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.software-service-contact-content h1,
+.software-service-contact-content h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-family: var(--primary-font);
+  color: #00246b;
+  font-weight: 600;
+}
+
+.software-service-contact-content p {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: var(--secondary-font);
+  font-weight: 200;
+  color: #333;
+}
+
+.software-service-contact-content button {
+  height: 50px;
+  width: 250px;
+  background: linear-gradient(to left, #003cb4, #00359f);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 450;
+  margin-top: 60px;
+  font-family: var(--primary-font);
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.software-service-contact-content button:hover {
+  background: linear-gradient(to left, #0056b3, #0048a3);
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 7px 20px;
+}
+
+/* ========== FAQ's =============== */
+
+.software-faq_container {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.software-faq {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #333;
+}
+
+.software-faq_container h3 {
+
+  font-family: var(--secondary-font);
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+
+
+/* ========================================================================
+      Responsiveness max-width of 375px
+==========================================================================*/
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .software-dev_hero {
+    display: flex;
+    flex-direction: column; /* Stack elements for mobile */
+    height: auto;
+    padding: 40px 15px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -170px;
+  }
+
+  .software-dev_hero_h1 {
+    margin-top: 150px;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 290px;
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .software-dev_hero_one button {
+    width: 100%;
+    max-width: 200px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+
+   /* Software Why Box */
+   .software-why_box {
+    margin: 20px auto;
+    padding: 0 15px;
+  }
+
+  .software-sub-heading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .software-sub-text {
+    font-size: 15px !important;
+    line-height: 26px;
+    margin-top: 6px;
+  }
+
+  .software-sevice {
+    font-size: 22px;
+  }
+
+  /* Adjust Boxes Layout */
+  .software-boxes {
+    flex-direction: column;
+    align-items: center;
+    margin: 40px  auto;
+  }
+
+  .software-box {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .software-properties h2 {
+  
+    font-size: 26px;
+    font-weight: 500;
+    margin-top: 50px;
+}
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    height: 300px; /* Adjusted height */
+    width: 275px; /* Adjusted width */
+    background: linear-gradient(135deg, #00246b, #7fa3dc);
+    border-radius: 10px; /* Rounded corners */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .software-properties {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .software-boxes p {
+    font-size: 16px;
+    padding: 10px;
+    line-height: 22px;
+    margin-top: 14px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .software-professional h2 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  /* Service Contact */
+  .software-service-contact {
+    flex-direction: column;
+    padding: 14px;
+    margin: 40px auto;
+    padding-top: 10px;
+    width:90%;
+  }
+
+  .software-service-contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  
+  }
+
+  .software-service-contact-img img {
+    min-width: 80%;
+    max-width: 80%;
+    margin-left: 25px;
+  }
+
+  .software-service-contact-content h2 {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .software-service-contact-content p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .software-service-contact-content button {
+    width: 100%;
+    max-width: 200px;
+    font-size: 18px;
+    margin-top: 30px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+
+/* ========================================================================
+      Responsiveness for min-width: 376px to max-width: 425px
+==========================================================================*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: -160px;
+  }
+
+  .software-dev_hero_h1 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 30px;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 360px;
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .software-dev_hero_one button {
+    width: 100%;
+    max-width: 240px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 14px;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 30px auto;
+    padding: 0 25px;
+  }
+
+  .software-sub-heading {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .software-sub-text {
+    font-size: 18px !important;
+    line-height: 30px;
+  }
+
+  .software-sevice {
+    font-size: 24px;
+  }
+
+  /* Adjust Boxes Layout */
+  .software-properties h2 {
+    font-family: var(--secondary-font);
+    font-size: 28px;
+    font-weight: 500;
+    /* margin-top: 50px; */
+    margin: 50px 37px;
+    line-height: 35px;
+}
+  .software-boxes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .software-box {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  align-items: center;
+  margin:0 auto;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    width: 100%;
+    max-width: 270px;
+    height:260px;
+    padding: 18px;
+  }
+
+  .software-properties {
+    font-size: 24px;
+    margin-top: 25px;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:33px;
+  }
+
+  .software-boxes p {
+    font-size: 16px;
+    padding: 12px;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+  .software-professional h2
+  {
+    font-size: 29px;
+    line-height: 35px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 92%;
+    height: auto;
+    padding: 22px;
+  }
+
+  .software-professional h1 {
+    font-size: 26px;
+  }
+
+  /* Service Contact */
+  .software-service-contact {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+    width: 90%;
+  }
+
+  .software-service-contact-content {
+    align-items: center;
+    padding: 12px;
+  }
+
+  .software-service-contact-img img {
+    margin-left: 0;
+    width: 220px;
+    height: 220px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 26px;
+    margin: 12px 0;
+    text-align: center;
+  }
+
+  .software-service-contact-content p {
+    font-size: 17px;
+    margin: 12px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 100%;
+    max-width: 220px;
+    font-size: 18px;
+    margin-top: 35px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+/* ========================================================================
+      Responsiveness for min-width: 426px to max-width: 599px
+==========================================================================*/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    height: auto;
+    padding: 60px 25px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .software-dev_hero_h1 {
+    margin-top: 100px;
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 25px;
+    text-align: left;
+    width:100%;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 18px;
+    text-align: left ;
+    width:100%;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 380px;
+    width: auto;
+  }
+
+  .software-dev_hero_one button {
+    width: 100%;
+    max-width: 250px;
+    height: 50px;
+    font-size: 1.1rem;
+    border-radius: 12px;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 30px auto;
+    padding: 0 25px;
+  }
+
+  .software-sub-heading {
+    font-size: 32px;
+    line-height: 24px;
+  }
+
+  .software-sub-text {
+    font-size: 22px !important;
+    line-height: 30px;
+    margin-top: 5px;
+  }
+
+  .software-sevice {
+    font-size: 26px;
+  }
+
+  /* Adjust Boxes Layout */
+  .software-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .software-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    width: 100%;
+    max-width: 290px;
+    padding: 20px;
+  }
+
+  .software-properties {
+    font-size: 26px;
+    margin-top: 30px;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 34px;
+    width: 34px;
+  }
+
+  .software-boxes p {
+    font-size: 16px;
+    padding: 14px;
+    line-height: 26px;
+    margin-top: 18px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    
+    align-items: center;
+    padding: 25px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 90%;
+    height:510px;
+    padding: 25px;
+  }
+
+  .software-professional h1 {
+    font-size: 28px;
+  }
+
+  /* Service Contact */
+  .software-service-contact {
+    text-align: center;
+    padding: 30px;
+  }
+
+  .software-service-contact-content {
+    align-items: center;
+    padding: 15px;
+  }
+
+  .software-service-contact-img img {
+    margin-left: 0;
+    width: 240px;
+    height: 240px;
+  }
+
+  .software-service-contact-content h2 {
+    font-size: 26px;
+    margin: 14px 0;
+    text-align: left;
+  }
+
+  .software-service-contact-content p {
+    font-size: 18px;
+    margin: 14px 0;
+    text-align: left;
+  }
+
+  .software-service-contact-content button {
+    width: 100%;
+    max-width: 250px;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px)
+{
+
+  .software-dev_hero
+  {
+            display: flex;
+            height: auto;
+            padding: 70px 30px;
+            text-align: center;
+            gap: 40px;
+  }
+  
+  
+  .software-dev_hero_two img {
+    height: 300px;
+    margin-bottom: 18px;
+}
+.software-dev_hero_h1
+{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+.software-_hero_one button {
+  width: 129px;
+  height: 45px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(to right, #003cb4, #00359f);
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  /* padding: 20px; */
+}
+.software-properties
+{
+  font-size: 32px;
+}
+.software-sub-heading
+{
+  font-size: 26px;
+  font-weight: 600;
+}
+.software-sub-text
+{
+  font-size: 26px;
+  font-weight: 200;
+}
+.software-webbg-1 {
+  height: 470px;
+  width: 68px;
+  position: absolute;
+  top: 0;
+  left: 3px;
+  opacity: 1;
+}
+.software-webbg-2
+{
+  right: 0px;
+}
+.software-box{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+
+.software-box-1, .software-box-2, .software-box-3, .software-box-4, .software-box-5, .software-box-6 {
+  width: 200px;
+  height:260px;
+  background-color: #fff;
+  border-radius: 0px 30px 0px 30px;
+  background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+  padding: 8px;
+}
+.software-boxes p {
+  color: white;
+  margin-top: 18px;
+  font-size: 15px;
+  text-align: center;
+
+}
+.software-professional-box-one, .software-professional-box-two, .software-professional-box-three {
+  height: 440px;
+  width: 300px;
+  padding: 30px;
+  background: linear-gradient(to left, #00246b, #7fa3dc);
+  border-radius: 0px 30px 0px 30px;
+  color:#fff;
+}
+.software-professional-content {
+  color: #ffffff;
+  margin-top: 8px;
+}
+.software-professional h1 {
+  margin-top: 17px;
+  text-align: center;
+  margin-bottom: 13px;
+  font-size: 25px;
+}
+
+
+.software-professional h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.software-professional-content ul li
+{
+  line-break: 23px;
+}
+.software-service-contact-img img {
+  margin-left: 40px;
+  width: 234px;
+  height: 240px;
+}
+.software-service-contact-content
+{
+  padding: 0;
+}
+.software-service-contact-content h1 {
+  font-size: 25px;
+}
+.software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+/* ========================================================================
+      Responsiveness for min-width: 769px to max-width: 1024px
+==========================================================================*/
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    height: auto;
+    padding: 70px 30px;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .software-dev_hero_one {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .software-dev_hero_h1 {
+    margin-top: 90px;
+    font-size: 28px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_h1 span {
+    margin-left: 0;
+    display: block;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 18px;
+  }
+
+  .software-dev_hero_two {
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 380px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_one button {
+    width: 140px;
+    height: 48px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 30px auto;
+    padding: 0 30px;
+  }
+
+  .software-sub-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; 
+  }
+
+  .software-sub-text {
+    font-size: 22px !important;
+    line-height: 30px;
+  }
+
+  .software-sevice {
+    font-size: 26px;
+  }
+
+  /* Adjust Boxes Layout */
+  .software-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .software-boxes1,
+  .software-boxes2 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    height: 240px;
+    width: 210px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(256.59deg, #00246b -98.59%, #264287 -43.06%, #4361a4 12.47%, #6081c0 67.99%, #7fa3dc 123.52%);
+    padding: 10px;
+  }
+
+  .software-boxes p {
+    color: white;
+    margin-top: 18px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .software-box-icon,
+  .software-icon-code-block {
+    height: 38px;
+    width: 38px;
+  }
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 40px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 320px;
+    height: 450px;
+    padding: 30px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+    color: #fff;
+  }
+
+  .software-professional h1 {
+    font-size: 27px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .software-professional h2 {
+    font-size: 19px;
+    margin-bottom: 12px;
+    color: #ffffff;
+  }
+
+  .software-professional-content {
+    font-size: 17px;
+    color: #ffffff;
+    margin-top: 10px;
+  }
+
+  .software-service-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+  }
+
+  .software-service-contact-content {
+    width: 50%;
+    padding: 20px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 28px;
+  }
+
+  .software-service-contact-content p {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 190px;
+    font-size: 18px;
+    padding: 12px;
+    margin-top: 25px;
+  }
+
+  .software-service-contact-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-service-contact-img img {
+    width: 250px;
+    height: 250px;
+  }
+
+  /* Hide Background Images for Performance */
+  .software-webbg-1,
+  .software-webbg-2 {
+    display: none;
+  }
+}
+
+
+/* ========================================================================
+      Responsiveness for min-width: 1025px to max-width: 1440px
+==========================================================================*/
+@media screen and (min-width: 1281px) {
+
+  /* Software Development Hero Section */
+  .software-dev_hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 80px 50px;
+    text-align: left;
+    gap: 50px;
+  }
+
+  .software-dev_hero_one {
+    width: 50%;
+  }
+
+  .software-dev_hero_h1 {
+    font-size: 36px;
+    line-height: 42px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .software-dev_hero_one p {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_two {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-dev_hero_two img {
+    height: 380px;
+    width: auto;
+    margin-bottom: 20px;
+  }
+
+  .software-dev_hero_one button {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 14px;
+    color: #fff;
+    background: linear-gradient(to right, #003cb4, #00359f);
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Software Why Box */
+  .software-why_box {
+    margin: 40px auto;
+    padding: 0 50px;
+  }
+
+  .software-sub-heading {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .software-sub-text {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .software-sevice {
+    font-size: 28px;
+  }
+
+  .software-box {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .software-box-1,
+  .software-box-2,
+  .software-box-3,
+  .software-box-4,
+  .software-box-5,
+  .software-box-6 {
+    height: 300px;
+    width: 260px;
+    background-color: #fff;
+    border-radius: 0px 30px 0px 30px;
+    background: linear-gradient(
+      256.59deg,
+      #00246b -98.59%,
+      #264287 -43.06%,
+      #4361a4 12.47%,
+      #6081c0 67.99%,
+      #7fa3dc 123.52%
+    );
+    padding: 10px;
+  }
+
+  
+
+  /* Software Professional Boxes */
+  .software-professinal-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+  }
+
+  .software-professional-box-one,
+  .software-professional-box-two,
+  .software-professional-box-three {
+    width: 340px;
+    height: 480px;
+    padding: 35px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    border-radius: 0px 30px 0px 30px;
+    color: #fff;
+  }
+
+  .software-professional h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  .software-professional h2 {
+    font-size: 21px;
+    margin-bottom: 14px;
+    color: #ffffff;
+  }
+
+  .software-professional-content {
+    font-size: 18px;
+    color: #ffffff;
+    margin-top: 12px;
+  }
+
+  /* Service Contact Section */
+  .software-service-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+  }
+
+  .software-service-contact-content {
+    width: 50%;
+    padding: 25px;
+  }
+
+  .software-service-contact-content h1 {
+    font-size: 32px;
+  }
+
+  .software-service-contact-content p {
+    font-size: 20px;
+    margin: 18px 0;
+  }
+
+  .software-service-contact-content button {
+    width: 200px;
+    font-size: 20px;
+    padding: 14px;
+    margin-top: 30px;
+  }
+
+  .software-service-contact-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .software-service-contact-img img {
+    width: 280px;
+    height: 280px;
+  }  
+
+
+  .software-webbg-1
+  {
+    height: 540px;
+    left: -68px;
+    top: 66px;
+  }
+  .software-webbg-2
+  {
+    height: 540px;
+    right:-64px;
+    top: 59px;
+  }
+}

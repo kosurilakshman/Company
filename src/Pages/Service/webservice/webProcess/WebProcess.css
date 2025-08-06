@@ -1,0 +1,258 @@
+:root {
+    --primary-text: 14px;
+    --secondary-text: 24px;
+    --bglinear-gradient: linear-gradient(to right, #00246b, #7fa3dc);
+    --primary-font: "Poppins", sans-serif;
+    --secondary-font: "Montserrat", sans-serif;
+  }
+  
+  /* Container for the Web process slider */
+  .web-container-slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
+    width: 100%;
+  }
+  
+  /* Progress Bar Wrapper */
+  .web-progress-bar-wrapper-slider {
+    width: 90%;
+    height: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Progress Bar */
+  .web-progress-bar-slider {
+    height: 100%;
+    background: linear-gradient(to right, #00246b, #7fa3dc);
+    transition: width 0.3s ease-in-out;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  /* Cards Wrapper */
+  .web-cards-wrapper-slider {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 40vh;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 16px;
+    padding: 10px;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+    scroll-snap-type: x mandatory;
+  }
+  
+  .web-cards-wrapper-slider::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+  }
+  
+  /* Individual Card */
+  .web-card-slider {
+    min-width: 80%;
+    height: 40vh;
+    padding:   24px;
+    background: linear-gradient(to left, #00246b, #7fa3dc);
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    scroll-snap-align: center;
+  }
+  
+  /* Card Heading */
+  .web-card-slider-heading {
+    font-size: 28px;
+    margin: 20px 0;
+    line-height: 22px;
+    font-family: var(--primary-font);
+  }
+  
+  /* Card Paragraph */
+  .web-card-slider-para {
+    font-size: 18px;
+    margin-top: 20px;
+    line-height: 24px;
+    font-family: var(--secondary-font);
+    color:#fff;
+  }
+  
+  
+
+  /* =============================================================================
+                            Responsiveness
+  ================================================================================*/
+
+  @media screen and (max-width: 480px) {
+    .web-container-slider {
+      padding: 16px;
+    }
+  
+    .web-progress-bar-wrapper-slider {
+      width: 90%;
+      height: 8px;
+    }
+  
+    .web-cards-wrapper-slider {
+      width: 90%;
+      gap: 12px;
+      padding: 8px;
+    }
+  
+    .web-card-slider {
+      min-width: 90%;
+      height: 35vh; /* Adjusted height for better fitting */
+      padding: 70px -2px;
+      border-radius: 10px;
+      box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
+    }
+  
+    .web-card-slider-heading {
+      font-size: 20px; /* Slightly reduced font size */
+      margin: 16px 0;
+    }
+  
+    .web-card-slider-para {
+      font-size: 15px;
+      margin-top: 16px;
+      line-height: 22px;
+    }
+  }
+
+  
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    .web-container-slider {
+      padding: 16px;
+    }
+  
+    .web-progress-bar-wrapper-slider {
+      width: 85%;
+      height: 9px;
+    }
+  
+    .web-cards-wrapper-slider {
+      width: 85%;
+      gap: 12px;
+      padding: 10px;
+    }
+  
+    .web-card-slider {
+      min-width: 90%;
+      height: 35vh;
+      padding: 40px 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.18);
+    }
+  
+    .web-card-slider-heading {
+      font-size: 20px;
+      margin: 18px 0;
+    }
+  
+    .web-card-slider-para {
+      font-size: 16px;
+      margin-top: 18px;
+    }
+  }
+
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .web-container-slider {
+      padding: 24px;
+    }
+  
+    .web-progress-bar-wrapper-slider {
+      width: 80%;
+      height: 10px;
+    }
+  
+    .web-cards-wrapper-slider {
+      width: 80%;
+      gap: 16px;
+      padding: 12px;
+    }
+  
+    .web-card-slider {
+      min-width: 90%;
+      height: 35vh;
+      padding: 60px 24px;
+      border-radius: 14px;
+      box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.2);
+    }
+  
+    .web-card-slider-heading {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+  
+    .web-card-slider-para {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+  }
+
+  
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .web-container-slider {
+      padding: 32px;
+    }
+  
+    .web-progress-bar-wrapper-slider {
+      width: 75%;
+      height: 12px;
+    }
+  
+    .web-cards-wrapper-slider {
+      width: 75%;
+      gap: 18px;
+      padding: 14px;
+    }
+  
+    .web-card-slider {
+      min-width: 90%;
+      height: 35vh;
+      padding:44px  28px;
+      border-radius: 16px;
+      box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.2);
+    }
+  
+    .web-card-slider-heading {
+      font-size: 26px;
+      margin: 22px 0;
+    }
+  
+    .web-card-slider-para {
+      font-size: 20px;
+      margin-top: 24px;
+    }
+  }
+
+  
+  @media screen and (min-width: 1281px) {
+    .web-container-slider {
+      padding: 40px;
+    }
+  
+    .web-progress-bar-wrapper-slider {
+      width: 90%;
+      height: 14px;
+    }
+  
+    .web-cards-wrapper-slider {
+      width: 90%;
+      gap: 20px;
+      padding: 16px;
+    }
+  
+    .web-card-slider {
+      min-width: 75%;
+      height: 30vh;
+    }
+  }
